@@ -16,19 +16,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from home import views as index_views
+from . import views
+from home import views as home_views
 from room import views as room_views
 from contact import views as contact_views
 from accounts import views as accounts_views
 
-
-
 urlpatterns = [
-    path('', index_views.index, name='index'),
+    path('', home_views.index, name='home'),
     path('admin/', admin.site.urls),
-    path('room/', room_views.index, name='room_index'),
-    path('contact/', contact_views.index, name='contact_index'),
-    path('accounts', accounts_views.index, name='accounts_index'),
-    
-
+    path('room/', views.room, name='room'),  # URL for the room pag
+    #path('room/', room_views.index, name='room_index'),
+    path('contact/', views.contact, name='contact'),
+    path('accounts/', accounts_views.index, name='login'),
+    path('accounts/', accounts_views.index, name='signup'),
 ]

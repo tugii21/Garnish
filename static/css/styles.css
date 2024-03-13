@@ -1,0 +1,59 @@
+/* styles.css */
+
+/* Navbar */
+.navbar {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px;
+}
+
+/* Main content */
+.container {
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+/* Mobile devices (up to 767px) */
+@media (max-width: 767px) {
+    .navbar-nav .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Tablet devices (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-nav .nav-item {
+        margin-right: 10px;
+    }
+}
+
+/* Laptop/desktop devices (992px and above) */
+@media (min-width: 992px) {
+    .navbar-nav .nav-item {
+        margin-right: 20px;
+    }
+}
