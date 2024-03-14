@@ -30,7 +30,8 @@ SECRET_KEY = 'django-insecure-n-m2i23eho5^kl9s3tl7y7$93##1((9fo^5_ztd%two_%djj%7
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-tugii21-garnish-vkjys4k3oxb.ws-eu109.gitpod.io'
-                 ,'.herokuapp.com'
+                 ,'.herokuapp.com',
+                 '8000-tugii21-garnish-vkjys4k3oxb.ws-eu110.gitpod.io'
 ]
 
 
@@ -43,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
+    'cloudinary',
     'home',
     'room',
     'contact',

@@ -1,8 +1,41 @@
-<!-- home.html -->
 {% extends 'base.html' %}
-{% block title %}Room Page{% endblock %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
 {% block content %}
-    <!-- Your home page content goes here -->
-    <h1>Home Page</h1>
-    <p>This is the room page content.</p>
+<div class="row">
+    <div class="col-md-6">
+        <!-- Heading and paragraph -->
+        <h1>Welcome to Garnish B&B</h1>
+        <p>
+
+           
+
+            Welcome to our charming guesthouse, a historic landmark nestled in the heart of Cork. With a rich heritage
+            dating back over 150 years, our guesthouse has been a cornerstone of the local community, serving
+            generations of visitors and residents alike. Situated amidst lush greenery and just a stone's throw away
+            from the renowned University College Cork (UCC) and the vibrant surrounding areas, our location offers the
+            perfect blend of tranquility and convenience.
+
+            Step into our welcoming atmosphere and experience the warmth of traditional Irish hospitality. Whether
+            you're exploring the picturesque park nearby, immersing yourself in the academic atmosphere of UCC, or
+            discovering the vibrant city center just minutes away, our guesthouse provides the ideal base for your Cork
+            adventure.
+
+            At our guesthouse, we pride ourselves on offering comfortable accommodations and attentive service at a very
+            reasonable price. From cozy rooms adorned with charming decor to thoughtful amenities designed to enhance
+            your stay, we strive to ensure that every aspect of your experience exceeds expectations.
+
+            Discover the allure of Cork and make our guesthouse your home away from home. Experience the timeless charm,
+            unbeatable location, and genuine hospitality that have made us a beloved destination for travelers seeking
+            an authentic Irish experience. We look forward to welcoming you and creating unforgettable memories
+            together.
+        </p>
+    </div>
+    <div class="col-md-6">
+        <!-- Image -->
+        <img src="{% static 'images/garnish.png' %}" class="img-fluid" alt="Image">
+    </div>
+</div>
 {% endblock %}
