@@ -28,6 +28,8 @@ urlpatterns = [
     path('room/', views.room, name='room'),  # URL for the room pag
     #path('room/', room_views.index, name='room_index'),
     path('contact/', views.contact, name='contact'),
-    path('accounts/', accounts_views.index, name='login'),
-    path('accounts/', accounts_views.index, name='signup'),
+    path("accounts/", include("allauth.urls")),
+    path('summernote/', include('django_summernote.urls')),
+    #path('accounts/', accounts_views.index, name='login'),
+    #path('accounts/', accounts_views.index, name='signup'),
 ]
