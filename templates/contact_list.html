@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Contact List
+{% endblock %}
+
+{% block content %}
+     <strong style="color: rgb(14, 23, 6);">Call Us on</strong>
+     <a href="tel:0219996666">0219996666</a>
+     <br>
+     <br>
+     <strong style="color: rgb(14, 23, 6);">Email Us</strong>
+     <a href="mailto:info@garnish.ie">info@garnish.ie</a>
+     <br>
+     <br>
+     <strong style="color: rgb(14, 23, 6);">Where are here</strong>
+     <a href="">21Mardyke Street,Ucc Road, Cork, T13VF29</a>
+     <br>
+     <br>
+
+  
+    <ul>
+        {% for contact in contacts %}
+            <li><a href="{% url 'contact_detail' contact.pk %}">User {{ contact.user }} Click Here To Your Previos Request</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'contact_create' %} ">Please Create <br>Your Details <br>and <br>
+        Your Request<br>Click Here</a>
+{% endblock %}

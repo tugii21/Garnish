@@ -35,36 +35,35 @@
                     <a class="nav-link text-white" href="{% url 'room' %}">Rooms</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="{% url 'contact' %}">Contact</a>
+                    <a class="nav-link text-white" href="{% url 'contact_list' %}">Contact</a>
                 </li>
+                </li>
+               
                 {% if user.is_authenticated %}
-                <li class="nav-item">
-                    <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
+                <li class="nav-item active">
+                    <a class="nav-link text-white{% if request.path == logout_url %}active{% endif %}" aria-current="page"
                         href="{% url 'account_logout' %}">Logout</a>
                 </li>
                 {% else %}
-                <li class="nav-item">
-                    <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+                <li class="nav-item active">
+                    <a class="nav-link text-white{% if request.path == signup_url %}active{% endif %}" aria-current="page"
                         href="{% url 'account_signup' %}">Register</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page"
+                <li class="nav-item active">
+
+                    <a class="nav-link text-white {% if request.path == login_url %}active{% endif %}" aria-current="page"
                         href="{% url 'account_login' %}">Sign In</a>
-                </li>
-                {% endif %}
+
+
+
+                    {% endif %}
             </ul>
         </div>
     </nav>
-    {% if user.is_authenticated %}
-    <div class="alert alert-success alert-dismissible fade show" role="alert" id="loginAlert">
-        <p class="text-end m-3">You are logged in as {{ user }}</p>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-    {% else %}
-    <div class="alert alert-success alert-dismissible fade show" role="alert" id="loginAlert">
-    <p class="text-end m-3">You are logged Out</p>
-    </div>
-    {% endif %}
+
+
+
+
 
     <div class="container mt-4">
         {% block content %}
@@ -98,16 +97,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        // Get the alert element
-        var alert = document.getElementById('loginAlert');
-   
 
-        // Add click event listener to the alert element
-        alert.addEventListener('click', function () {
-            alert.classList.remove('show');
-        });
-    </script>
+
+
+
 </body>
 
 </html>

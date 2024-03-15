@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Detail</title>
+</head>
+<body>
+    <h1>Contact Detail</h1>
+    <p><strong>Name:</strong> {{ contact.name }}</p>
+    <p><strong>Email:</strong> {{ contact.email }}</p>
+    <p><strong>Phone Number:</strong> {{ contact.phone_number }}</p>
+    <p><strong>Address:</strong> {{ contact.address }}</p>
+    <a href="{% url 'contact_update' contact.pk %}">Edit</a>
+    <form action="{% url 'contact_delete' contact.pk %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Delete</button>
+    </form>
+    <a href="{% url 'contact_list' %}">Back to List</a>
+</body>
+</html>
