@@ -24,11 +24,12 @@
     <p><strong>Address:</strong> {{ contact.address }}</p>
     <p><strong>Message:</strong> {{ contact.message }}</p>
     <p><strong>If You Want To Update Your Submitted Request <br>Then Click Update Button </strong></p>
-    <a href="{% url 'contact_update' contact.pk %}">Update</a>
-    <form action="{% url 'contact_delete' contact.pk %}" method="post">
+    <a href="{% url 'contact_update' contact.pk %}"><button type="submit">Update</button></a>
+
         {% csrf_token %}
     <p><strong>If You Want To Delete Your Submitted Request <br>Then Click Delete Button </strong></p>
-        <button type="submit">Delete</button>
+    <a href="{% url 'contact_delete' pk=contact.pk %}"><button type="submit">Delete</button></a>
+
     </form>
     <a href="{% url 'contact_list' %}">Back to List</a>
 {% endblock %}

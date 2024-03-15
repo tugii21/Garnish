@@ -24,6 +24,6 @@
             <li><a href="{% url 'contact_detail' contact.pk %}">User {{ contact.user }} Click Here To Your Previos Request</a></li>
         {% endfor %}
     </ul>
-    <a href="{% url 'contact_create' %} ">Please Create <br>Your Details <br>and <br>
-        Your Request<br>Click Here</a>
+    <a href="{% url 'contact_create' %} "> <button type="submit">Send Us<br>
+        Your Request<br>Here</a></button>
 {% endblock %}

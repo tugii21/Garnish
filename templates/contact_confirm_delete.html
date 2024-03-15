@@ -20,8 +20,9 @@
      <br>
 
     <h1>Confirm Delete</h1>
-    <p>Are you sure you want to delete "{{ contact.name }}"?</p>
+    <p>Are you sure you want to delete your request User: "{{ contact.name }}"?</p>
     <form action="{% url 'contact_delete' contact.pk %}" method="post">
+        
         {% csrf_token %}
         <button type="submit">Yes, delete</button>
     </form>

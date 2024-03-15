@@ -9,5 +9,7 @@ urlpatterns = [
     path('contacts/<int:pk>/update/', views.contact_update, name='contact_update'),
     path('contacts/<int:pk>/delete/', views.contact_delete, name='contact_delete'),
     path('login/', LoginView.as_view(), name='login'),
+  
     
 ]
+    
