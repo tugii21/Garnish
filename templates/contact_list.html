@@ -1,10 +1,13 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}
     Contact List
 {% endblock %}
 
 {% block content %}
+<div class="row">
+    <div class="col-md-6">
      <strong style="color: rgb(14, 23, 6);">Call Us on</strong>
      <a href="tel:0219996666">0219996666</a>
      <br>
@@ -26,4 +29,10 @@
     </ul>
     <a href="{% url 'contact_create' %} "> <button type="submit">Send Us<br>
         Your Request<br>Here</a></button>
+    </div>
+    <div class="col-md-6">
+        <!-- Image -->
+        <img src="{% static 'images/hotelowner.png' %}" class="img-fluid" alt="Image">
+    </div>
+</div>
 {% endblock %}
