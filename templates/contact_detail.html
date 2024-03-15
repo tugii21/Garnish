@@ -1,37 +1,45 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %}
 Contact List
 {% endblock %}
 
 {% block content %}
+<div class="row">
+    <div class="col-md-6">
 
 
-<strong style="color: rgb(14, 23, 6);">Call Us on</strong>
-<a href="tel:0219996666">0219996666</a>
-<br>
-<br>
-<strong style="color: rgb(14, 23, 6);">Email Us</strong>
-<a href="mailto:info@garnish.ie">info@garnish.ie</a>
-<br>
-<br>
-<strong style="color: rgb(14, 23, 6);">Where are here</strong>
-<a href="">21Mardyke Street,Ucc Road, Cork, T13VF29</a>
-<br>
-<br>
-<h1>Contact Detail</h1>
-<p><strong>Name:</strong> {{ contact.name }}</p>
-<p><strong>Email:</strong> {{ contact.email }}</p>
-<p><strong>Phone Number:</strong> {{ contact.phone_number }}</p>
-<p><strong>Address:</strong> {{ contact.address }}</p>
-<p><strong>Message:</strong> {{ contact.message }}</p>
-<p><strong>If You Want To Update Your Submitted Request <br>Then Click Update Button </strong></p>
-<a href="{% url 'contact_update' contact.pk %}"><button type="submit">Update</button></a>
+        <strong style="color: rgb(14, 23, 6);">Call Us on</strong>
+        <a href="tel:0219996666">0219996666</a>
+        <br>
+        <br>
+        <strong style="color: rgb(14, 23, 6);">Email Us</strong>
+        <a href="mailto:info@garnish.ie">info@garnish.ie</a>
+        <br>
+        <br>
+        <strong style="color: rgb(14, 23, 6);">Where are here</strong>
+        <a href="">21Mardyke Street,Ucc Road, Cork, T13VF29</a>
+        <br>
+        <br>
+        <h1>Contact Detail</h1>
+        <p><strong>Name:</strong> {{ contact.name }}</p>
+        <p><strong>Email:</strong> {{ contact.email }}</p>
+        <p><strong>Phone Number:</strong> {{ contact.phone_number }}</p>
+        <p><strong>Address:</strong> {{ contact.address }}</p>
+        <p><strong>Message:</strong> {{ contact.message }}</p>
+        <p><strong>If You Want To Update Your Submitted Request <br>Then Click Update Button </strong></p>
+        <a href="{% url 'contact_update' contact.pk %}"><button type="submit">Update</button></a>
 
-{% csrf_token %}
-<p><strong>If You Want To Delete Your Submitted Request <br>Then Click Delete Button </strong></p>
-<a href="{% url 'contact_delete' pk=contact.pk %}"><button type="submit">Delete</button></a>
+        {% csrf_token %}
+        <p><strong>If You Want To Delete Your Submitted Request <br>Then Click Delete Button </strong></p>
+        <a href="{% url 'contact_delete' pk=contact.pk %}"><button type="submit">Delete</button></a>
 
-</form>
-<a href="{% url 'contact_list' %}">Back to List</a>
+        </form>
+        <a href="{% url 'contact_list' %}">Back to List</a>
+    </div>
+    <div class="col-md-6">
+        <!-- Image -->
+        <img src="{% static 'images/updateform.png' %}" class="img-fluid" alt="Image">
+    </div>
+</div>
 {% endblock %}
