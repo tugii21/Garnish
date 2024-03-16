@@ -2,7 +2,118 @@
 {% extends 'base.html' %}
 {% block title %}Room Page{% endblock %}
 {% block content %}
-    <!-- Your room page content goes here -->
-    <h1>Room Page</h1>
-    <p>This is the room page content.</p>
+{% load static %}
+
+<!-- Your room page content goes here -->
+<div class="container mt-4">
+    <h1>Single Rooms</h1>
+    <div class="row">
+        <div class="col-12 mb-4">
+            <div class="card w-100">
+                <div class="row no-gutters">
+                    <div class="col-4">
+                        <img src="{% static 'images/garnish.png' %}" class="card-img" alt="Room 1">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/garnish.png' %}" class="card-img" alt="Room 2">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/garnish.png' %}" class="card-img" alt="Room 3">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Room 1</h5>
+                    <p class="card-text">
+                        Our single room in a guesthouse is typically designed to accommodate one guest. It is furnished
+                        with a single bed.
+
+                        In terms of amenities, Our a single room includes basic facilities such as a bedside table, a
+                        lamp, a wardrobe or closet, and a small desk or writing area. Additional feature includes a
+                        television, a telephone, and access to Wi-Fi or wired internet for guests' convenience. private
+                        bathroom attached.
+
+                        The decor and furnishings of a our single room can vary. Whether it's a cozy retreat for a solo
+                        traveler or a functional space for a business trip, Our goal is to provide comfort and
+                        convenience to the guest during your stay.</p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat the above card structure for other rooms -->
+    </div>
+</div>
+<div class="container mt-4">
+    <h1>Double Rooms</h1>
+    <div class="row">
+        <div class="col-12 mb-4">
+            <div class="card w-100">
+                <div class="row no-gutters">
+                    <div class="col-4">
+                        <img src="{% static 'images/garnish.png' %}" class="card-img" alt="Room 1">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/garnish.png' %}" class="card-img" alt="Room 2">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/garnish.png' %}" class="card-img" alt="Room 3">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Room 2</h5>
+                    <p class="card-text">
+
+                        Our double bedroom in a bed and breakfast offers a cozy and inviting space for two guests to
+                        relax and unwind during their stay. Typically furnished with a comfortable queen or king-size
+                        bed, this room provides ample space for a couple or two individuals traveling together to enjoy
+                        a restful night's sleep.
+
+                        In addition to the comfortable bed, a double bedroom in a B&B includes thoughtful amenities to
+                        enhance our guests' experience. Also include bedside tables with reading lamps, a seating area
+                        for relaxation or conversation, a wardrobe or closet for storage, and a writing desk or vanity
+                        for added convenience.
+
+
+
+                    </p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat the above card structure for other rooms -->
+    </div>
+</div>
+<div class="container mt-4">
+    <h1>EnSuite Rooms</h1>
+    <div class="row">
+        <div class="col-12 mb-4">
+            <div class="card w-100">
+                <div class="row no-gutters">
+                    <div class="col-4">
+                        <img src="{% static 'images/garnish.png' %}" class="card-img" alt="Room 1">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/garnish.png' %}" class="card-img" alt="Room 2">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/garnish.png' %}" class="card-img" alt="Room 3">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Room 3</h5>
+                    <p class="card-text">
+                        Our en suite is the epitome of convenience and luxury, offering a private oasis within the
+                        confines of your accommodation. This exclusive feature provides you with the ultimate comfort
+                        and privacy, allowing you to indulge in relaxation without ever leaving your room.
+
+                        Imagine stepping into your own personal sanctuary, complete with a pristine bathroom attached
+                        directly to your bedroom. With an en suite, you have the freedom to pamper yourself in style,
+                        whether it's enjoying a refreshing shower after a long day of exploration or luxuriating in a
+                        soothing bath to unwind before bed.</p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat the above card structure for other rooms -->
+    </div>
+</div>
 {% endblock %}
