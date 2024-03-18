@@ -27,11 +27,13 @@ from accounts import views as accounts_views
 
 urlpatterns = [
     path('', home_views.index, name='home'),
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls, name='admin'),
+    #path('room/', room_views.room_view, name='room'),  # Add the URL pattern for the room view
     path('room/', include('room.urls')),
     path("accounts/", include("allauth.urls")),
     path('summernote/', include('django_summernote.urls')),
     path('contact/', include('contact.urls')),
+    #path('room/', include('room.urls')),
     #path('accounts/', accounts_views.index, name='signup'),
     #path('superuser/login/', accounts_views.superuser_login, name='superuser_login'),  # Check this line
     #path('dashboard/', views.dashboard, name='dashboard'),

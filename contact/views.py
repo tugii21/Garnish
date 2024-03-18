@@ -7,7 +7,10 @@ from django.contrib import messages
 
 @login_required
 def contact_list(request):
-    contacts = Contact.objects.filter(user=request.user)
+    if request.user.is_authenticated:
+        contacts = Contact.objects.filter(user=request.user)
+    else:
+        contacts = Contact.objects.all()
     return render(request, 'contact_list.html', {'contacts': contacts})
 
 
@@ -54,9 +57,6 @@ def contact_delete(request, pk):
     return render(request, 'contact_confirm_delete.html', {'contact': contact})
 
 
-@login_required
-def contact_list(request):
-    contacts = Contact.objects.all()
-    return render(request, 'contact_list.html', {'contacts': contacts})
+
 
 

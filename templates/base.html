@@ -3,6 +3,7 @@
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
 {% include 'django_messages.html' %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,12 +34,18 @@
                     <a class="nav-link text-white" href="{% url 'home' %}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="{% url 'room' %}">Rooms</a>
+                    <a class="nav-link text-white" href="{% url 'room' %}" >Rooms</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="{% url 'contact_list' %}">Contact</a>
                 </li>
+                
+        
+                <li class="nav-item">
+                     <a class="nav-link text-white" href="{% url 'admin:index' %}">Staff Login</a>
                 </li>
+               
+                
                
                 {% if user.is_authenticated %}
                 <li class="nav-item active">

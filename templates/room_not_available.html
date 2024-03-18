@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}creat booking{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Room Not Available</h1>
+    <p>Sorry, the selected room is not available for the specified dates.</p>
+    <p>Please <a href="{% url 'booking_page' %}">try again</a> with different dates or choose another room.</p>
+</div>
+{% endblock %}
