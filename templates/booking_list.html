@@ -4,14 +4,12 @@
 {% block title %}booking{% endblock %}
 {% block content %}
 <div class="container mt-4">
-    <h1>This is Test. Booking List</h1>
+    <h1>Your Booking Lists</h1>
     <ul>
         {% for booking in bookings %}
             <li>
-                <a href="{% url 'booking_detail' booking.id %}">Booking ID: {{ booking.id }}</a><br>
-                Room Type: {{ booking.room.get_room_type_display }}<br>
-                Check-in Date: {{ booking.check_in_date }}<br>
-                Check-out Date: {{ booking.check_out_date }}<br>
+                <a href="{% url 'booking_detail' booking.id%}">Booking ID: {{ booking.id }}</a><br>
+           
             </li>
         {% endfor %}
     </ul>
@@ -145,12 +143,6 @@
 
 
 
-<h1>Booking List</h1>
-<ul>
-    {% for booking in bookings %}
-        <li><a href="{% url 'booking_detail' booking.id %}">Booking ID: {{ booking.id }}</a></li>
-    {% endfor %}
-</ul>
 
 
 {% endblock %}

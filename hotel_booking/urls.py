@@ -33,7 +33,6 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path('summernote/', include('django_summernote.urls')),
     path('contact/', include('contact.urls')),
-    #path('room/', include('room.urls')),
     #path('accounts/', accounts_views.index, name='signup'),
     #path('superuser/login/', accounts_views.superuser_login, name='superuser_login'),  # Check this line
     #path('dashboard/', views.dashboard, name='dashboard'),

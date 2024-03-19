@@ -9,6 +9,8 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
+
 
 
 def room_view(request):
@@ -18,15 +20,16 @@ def room_view(request):
 
 @login_required
 def create_booking(request):
-    room_id = request.GET.get('room')
     if request.method == 'POST':
         form = BookingForm(request.POST)
         if form.is_valid():
-            form.save()
-            return redirect('booking_list')
+            booking = form.save(commit=False)
+            booking.user = request.user  # Set the user field
+            booking.save()
+            messages.success(request, 'Booking has been created.')
+            return redirect('booking_detail', pk=booking.pk)
     else:
-        form = BookingForm(room_id=room_id)  # Pass room_id to the form
-
+        form = BookingForm()
     return render(request, 'create_booking.html', {'form': form})
 
 
@@ -39,6 +42,7 @@ def update_booking(request, pk):
     if request.method == 'POST':
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
+            messages.success(request, 'Booking has been updated.')
             form.save()
             return redirect('booking_detail', pk=pk)
     else:
@@ -49,6 +53,8 @@ def delete_booking(request, pk):
     booking = get_object_or_404(Booking, pk=pk)
     if request.method == 'POST':
         booking.delete()
+        messages.success(request, 'Booking has been deleted.')
+
         return redirect('booking_list')
     return render(request, 'delete_booking.html', {'booking': booking})
 

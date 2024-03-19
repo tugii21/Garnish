@@ -9,13 +9,19 @@ class Room(models.Model):
         ('2', 'Double Room'),
         ('3', 'Ensuite Room'),
     )
-    room_type = models.IntegerField(choices=ROOM_TYPES, default=1)
+    room_type = models.CharField(max_length=2, choices=ROOM_TYPES, default='1')  # Changed to CharField
+    bed = models.IntegerField()  # Field for bed type
+    capacity = models.IntegerField()  # Field for capacity
+    number = models.IntegerField()
+
     # 
-    def bookings(self):
-        # Retrieve bookings associated with this room
-        return Booking.objects.filter(room=self)
     def __str__(self):
-        return f"{self.get_room_type_display()} Room"  # Corrected line
+        return f"{self.room_type}"
+    #def bookings(self):
+     #   return Booking.objects.filter(room=self)
+    #def __str__(self):
+     #   return f"{self.get_room_type_display()} Room"  # Corrected line
+    
     #def __str__(self):
      #   return f"Booking for {self.room} by {self.user}"
 
@@ -31,7 +37,7 @@ class Booking(models.Model):
     status = models.CharField(max_length=10, choices=ROOM_STATUS_CHOICES, default='booked')
     # 
     def __str__(self):
-        return f"Booking for {self.room} by {self.user}"
+        return f"{self.user} booked for  Room number {self.room} from {self.check_in_date} to {self.check_out_date} "
 class RoomAvailability(models.Model):
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
     date = models.DateField()
