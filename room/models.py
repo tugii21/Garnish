@@ -35,6 +35,8 @@ class Booking(models.Model):
     check_in_date = models.DateField()
     check_out_date = models.DateField()
     status = models.CharField(max_length=10, choices=ROOM_STATUS_CHOICES, default='booked')
+    created_on = models.DateTimeField(auto_now_add=True)  # Automatically set the current date and time when an object is created
+
     # 
     def __str__(self):
         return f"{self.user} booked for  Room number {self.room} from {self.check_in_date} to {self.check_out_date} "

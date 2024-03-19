@@ -24,7 +24,7 @@
   
     <ul>
         {% for contact in contacts %}
-            <li><a href="{% url 'contact_detail' contact.pk %}">User {{ contact.user }} --> View Your Request</a></li>
+            <li><a href="{% url 'contact_detail' contact.pk %}">User {{ contact.user }} --> View Your Request <br>Request Sent On: {{ contact.created_on }}</a></li>
         {% endfor %}
     </ul>
     <a href="{% url 'contact_create' %} "> <button type="submit">Send Us<br>

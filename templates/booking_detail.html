@@ -14,6 +14,7 @@
 <br>Room Type: {{ booking.room.get_room_type_display }}<br>
 <br>Check-in Date: {{ booking.check_in_date }}<br>
 Check-out Date: {{ booking.check_out_date }}<br>
+Booked ON: {{ booking.created_on }}<br>
 <a href="{% url 'room' %}" class="btn btn-primary">Back to Room Page</a><br>or <br>
 <a href="{% url 'create_booking' %}" class="btn btn-primary">Create Booking</a>
 

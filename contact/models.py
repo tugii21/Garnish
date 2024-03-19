@@ -10,6 +10,8 @@ class Contact(models.Model):
     phone_number = models.CharField(max_length=15)
     address = models.TextField()
     message = models.TextField()  # New field for guest request
+    created_on = models.DateTimeField(auto_now_add=True)  # Automatically set the current date and time when an object is created
+
 
     def __str__(self):
         return self.name
