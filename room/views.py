@@ -12,9 +12,9 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
 
-
+@login_required
 def room_view(request):
-    bookings = Booking.objects.all()
+    bookings = Booking.objects.filter(user=request.user)
     return render(request, 'booking_list.html', {'bookings': bookings})
 
 
