@@ -79,3 +79,8 @@ body {
 .flex-grow-1 {
     flex-grow: 1;
 }
+
+/* style.css  for hotel contact info*/
+.contact-info {
+    color: rgb(14, 23, 6);
+}

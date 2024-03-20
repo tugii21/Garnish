@@ -79,3 +79,17 @@ body {
 .flex-grow-1 {
     flex-grow: 1;
 }
+
+
+/* Form */
+#signup {
+    background-image: url("{% static 'images/signin.png' %}");
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
