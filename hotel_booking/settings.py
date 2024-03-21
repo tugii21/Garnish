@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-tugii21-garnish-vkjys4k3oxb.ws-eu109.gitpod.io'
                  ,'.herokuapp.com',
@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-     'django_summernote',
+    'django_summernote',
     'cloudinary_storage',
     'cloudinary',
     'home',

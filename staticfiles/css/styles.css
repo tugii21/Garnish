@@ -80,9 +80,13 @@ body {
     flex-grow: 1;
 }
 
+/* style.css  for hotel contact info*/
+.contact-info {
+    color: rgb(14, 23, 6);
+}
 
 /* Form */
-#signup {
+#signup .background-image-container{
     background-image: url("{% static 'images/signin.png' %}");
     background-size: cover;
     background-position: 75%;
@@ -93,3 +97,19 @@ body {
     align-items: center;
     flex-direction: column;
 }
+/* styling sign up form  */
+.signup .form-group {
+    display: inline-block;
+    margin-right: 10px; 
+  }
+  
+  .signup label {
+    display: block;
+  }
+  
+  .signup input[type="text"],
+  .signup input[type="email"],
+  .signup input[type="password"] {
+    width: 200px; /* width  */
+  }
+
