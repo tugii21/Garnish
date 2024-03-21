@@ -84,3 +84,32 @@ body {
 .contact-info {
     color: rgb(14, 23, 6);
 }
+
+/* Form */
+#signup .background-image-container{
+    background-image: url("{% static 'images/signin.png' %}");
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* styling sign up form Adjust as needed */
+.signup .form-group {
+    display: inline-block;
+    margin-right: 10px; 
+  }
+  
+  .signup label {
+    display: block;
+  }
+  
+  .signup input[type="text"],
+  .signup input[type="email"],
+  .signup input[type="password"] {
+    width: 200px; /* Adjust as needed */
+  }
+
