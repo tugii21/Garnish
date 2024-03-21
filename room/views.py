@@ -14,12 +14,14 @@ from django.contrib import messages
 
 @login_required
 def room_view(request):
+    """Render the booking list for the current user."""
     bookings = Booking.objects.filter(user=request.user)
     return render(request, 'booking_list.html', {'bookings': bookings})
 
 
 @login_required
 def create_booking(request):
+    """Handle creation of a new booking."""
     if request.method == 'POST':
         form = BookingForm(request.POST)
         if form.is_valid():
@@ -34,10 +36,12 @@ def create_booking(request):
 
 
 def booking_detail(request, pk):
+    """Display details of a booking."""
     booking = get_object_or_404(Booking, pk=pk)
     return render(request, 'booking_detail.html', {'booking': booking})
 
 def update_booking(request, pk):
+    """Handle updating an existing booking."""
     booking = get_object_or_404(Booking, pk=pk)
 
     if request.method == 'POST':
@@ -55,6 +59,7 @@ def update_booking(request, pk):
     return render(request, 'update_booking.html', {'form': form, 'booking': booking})
 
 def delete_booking(request, pk):
+    """Handle deletion of an existing booking."""
     booking = get_object_or_404(Booking, pk=pk)
     if request.method == 'POST':
         booking.delete()
@@ -64,6 +69,7 @@ def delete_booking(request, pk):
     return render(request, 'delete_booking.html', {'booking': booking})
 
 def book_room(request, room_id):
+    """Handle booking a room."""
     room_availability = RoomAvailability.objects.filter(room_id=room_id)
     
     if request.method == 'POST':
@@ -86,7 +92,3 @@ def book_room(request, room_id):
 
     return render(request, 'booking_form.html', {'form': form, 'room_availability': room_availability})
 
-#def room(request):
- #   return render(request, 'room.html')
-#def index(request):
- #   return HttpResponse("this is room page")
