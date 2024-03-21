@@ -2,24 +2,25 @@
 {% load static %}
 
 {% block title %}
-    Contact List
+Contact List
 {% endblock %}
 
 {% block content %}
 <div class="row">
     <div class="col-md-6">
-    {% include 'hotel_info.html' %}
+        {% include 'hotel_info.html' %}
 
-     <br>
+        <br>
 
-  
-    <ul>
-        {% for contact in contacts %}
-            <li><a href="{% url 'contact_detail' contact.pk %}">User {{ contact.user }} --> View Your Request <br>Request Sent On: {{ contact.created_on }}</a></li>
-        {% endfor %}
-    </ul>
-    <a href="{% url 'contact_create' %} "> <button type="submit">Send Us<br>
-        Your Request<br>Here</a></button>
+
+        <ul>
+            {% for contact in contacts %}
+            <li><a href="{% url 'contact_detail' contact.pk %}">User {{ contact.user }} --> View Your Request
+                    <br>Request Sent On: {{ contact.created_on }}</a></li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'contact_create' %} "> <button type="submit">Send Us<br>
+                Your Request<br>Here</a></button>
     </div>
     <div class="col-md-6">
         <!-- Image -->

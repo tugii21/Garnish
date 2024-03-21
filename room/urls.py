@@ -1,5 +1,5 @@
-from django.urls import path
-from . import views
+from django.urls import path # Import the path function from django.urls
+from . import views # Import views from the current directory
 
 # Define URL patterns for booking-related views
 urlpatterns = [

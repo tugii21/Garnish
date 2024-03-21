@@ -1,14 +1,13 @@
 {% if messages %}
 
-    <!-- Success message container -->
-    <div class="container mt-4">
-        {% if messages %}
-            {% for message in messages %}
-                <div class="alert alert-success text-center" style="color: red;">
-                    {{ message }}
-                </div>
-            {% endfor %}
-        {% endif %}
+<!-- Success message container -->
+<div class="container mt-4">
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-success text-center" style="color: red;">
+        {{ message }}
     </div>
+    {% endfor %}
+    {% endif %}
+</div>
 {% endif %}
-

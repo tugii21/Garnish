@@ -97,7 +97,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
-/* styling sign up form Adjust as needed */
+/* styling sign up form  */
 .signup .form-group {
     display: inline-block;
     margin-right: 10px; 
@@ -110,6 +110,6 @@ body {
   .signup input[type="text"],
   .signup input[type="email"],
   .signup input[type="password"] {
-    width: 200px; /* Adjust as needed */
+    width: 200px; /* width  */
   }
 

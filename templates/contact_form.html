@@ -3,26 +3,26 @@
 
 
 {% block title %}
-    Contact List
+Contact List
 {% endblock %}
 
 {% block content %}
 <div class="row">
     <div class="col-md-6">
-    {% include 'hotel_info.html' %}
+        {% include 'hotel_info.html' %}
 
-     <br>
-    <h1>Customer Request Form</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Send Request</button>
-    </form>
-    <a href="{% url 'contact_list' %}">Or Cancel Request</a>
-</div>
-<div class="col-md-6">
-    <!-- Image -->
-    <img src="{% static 'images/anyquestion.png' %}" class="img-fluid" alt="Image">
-</div>
+        <br>
+        <h1>Customer Request Form</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Send Request</button>
+        </form>
+        <a href="{% url 'contact_list' %}">Or Cancel Request</a>
+    </div>
+    <div class="col-md-6">
+        <!-- Image -->
+        <img src="{% static 'images/anyquestion.png' %}" class="img-fluid" alt="Image">
+    </div>
 </div>
 {% endblock %}

@@ -16,8 +16,8 @@ Including another URLconf
 """
 from . import views
 from django.contrib import admin
-from django.urls import path, include
-from home import views as home_views
+from django.urls import path, include # Import path function for defining URL patterns and include for including other URL configurations
+from home import views as home_views  # Import views from the home app with an alias
 from room import views as room_views
 from contact import views as contact_views
 from accounts import views as accounts_views
@@ -27,10 +27,10 @@ from accounts import views as accounts_views
 # Define urlpatterns as a list of URL patterns
 urlpatterns = [
     path('', home_views.index, name='home'),
-    path('admin/', admin.site.urls, name='admin'),
+    path('admin/', admin.site.urls, name='admin'), # URL pattern for the Django admin interface
     path('room/', include('room.urls')),
     path("accounts/", include("allauth.urls")),
-    path('summernote/', include('django_summernote.urls')),
+    path('summernote/', include('django_summernote.urls')), # Include URL patterns for django_summernote
     path('contact/', include('contact.urls')),
     
 ]

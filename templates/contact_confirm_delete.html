@@ -11,9 +11,6 @@ Contact confirm delete
     <div class="col-md-6">
         {% include 'hotel_info.html' %}
 
-      
-        
-
         <h1>Confirm Delete</h1>
         <p>Are you sure you want to delete your request User: "{{ contact.name }}"?</p>
         <form action="{% url 'contact_delete' contact.pk %}" method="post">
@@ -25,10 +22,10 @@ Contact confirm delete
         {% if message %}
         <p>{{ message }}</p>
         {% endif %}
-        </div>
-        <div class="col-md-6">
-            <!-- Image -->
-            <img src="{% static 'images/delform.png' %}" class="img-fluid" alt="Image">
-        </div>
     </div>
-    {% endblock %}
+    <div class="col-md-6">
+        <!-- Image -->
+        <img src="{% static 'images/delform.png' %}" class="img-fluid" alt="Image">
+    </div>
+</div>
+{% endblock %}

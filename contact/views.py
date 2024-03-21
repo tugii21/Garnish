@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404# Import necessary functions from Django's shortcuts module
-from .models import Contact
-from .forms import ContactForm
+from .models import Contact #import contact model from current dir model
+from .forms import ContactForm #import contactform from forms
 from django.contrib.auth.decorators import login_required # Import login_required decorator from Django's authentication decorators
 from django.contrib import messages # Import messages module from Django's contrib package
 
