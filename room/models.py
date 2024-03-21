@@ -53,7 +53,10 @@ class RoomAvailability(models.Model):
         return f"{self.room} - {self.date} - {'Available' if self.available else 'Not Available'}"
 
     def clean(self):
-        if self.available:
-            if Booking.objects.filter(room=self.room, check_in_date=self.date).exists():
-                raise ValidationError(_('This room is already booked for this date.'))
+        if self.room is not None and self.date is not None:
+            if self.available:
+                if Booking.objects.filter(room=self.room, check_in_date=self.date).exists():
+                    raise ValidationError(_('This room is already booked for this date.'))
+        else:
+            raise ValidationError(_('Room and date must be provided.'))
 

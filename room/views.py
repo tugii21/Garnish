@@ -39,15 +39,20 @@ def booking_detail(request, pk):
 
 def update_booking(request, pk):
     booking = get_object_or_404(Booking, pk=pk)
+
     if request.method == 'POST':
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
-            messages.success(request, 'Booking has been updated.')
             form.save()
+            messages.success(request, 'Booking has been updated.')
             return redirect('booking_detail', pk=pk)
+        else:
+            # If the form is not valid, display any errors
+            messages.error(request, 'Please Enter The Room Number and Desired Check In and Check Out dates.')
     else:
         form = BookingForm(instance=booking)
-    return render(request, 'update_booking.html', {'form': form})
+
+    return render(request, 'update_booking.html', {'form': form, 'booking': booking})
 
 def delete_booking(request, pk):
     booking = get_object_or_404(Booking, pk=pk)
