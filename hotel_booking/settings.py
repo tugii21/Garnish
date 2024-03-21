@@ -167,5 +167,5 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'  # Use 'bootstrap4' for Django Bootstrap 4, 'bootstrap3' for Bootstrap 3
+CRISPY_TEMPLATE_PACK = 'bootstrap4'  # 'bootstrap4' for Django Bootstrap 4, 'bootstrap3' for Bootstrap 3
 
