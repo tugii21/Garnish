@@ -1,13 +1,16 @@
 from django.shortcuts import render
 
-
+# Define the index view function
 def index(request):
+    """
+    View function for the homepage.
+
+    Args:
+    - request: HttpRequest object representing the current HTTP request.
+
+    Returns:
+    - Rendered HTTP response with the 'home.html' template.
+    """
     return render(request, 'home.html')
 
-#from django.shortcuts import render
-#from django.http import HttpResponse
-
-# Create your views here.
-#def index(request):
- #   return HttpResponse("Welcome to Garnish B&b")
 

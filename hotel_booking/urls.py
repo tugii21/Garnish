@@ -24,22 +24,15 @@ from accounts import views as accounts_views
 
 
 
-
+# Define urlpatterns as a list of URL patterns
 urlpatterns = [
     path('', home_views.index, name='home'),
     path('admin/', admin.site.urls, name='admin'),
-    #path('room/', room_views.room_view, name='room'),  # Add the URL pattern for the room view
     path('room/', include('room.urls')),
     path("accounts/", include("allauth.urls")),
     path('summernote/', include('django_summernote.urls')),
     path('contact/', include('contact.urls')),
-    #path('accounts/', accounts_views.index, name='signup'),
-    #path('superuser/login/', accounts_views.superuser_login, name='superuser_login'),  # Check this line
-    #path('dashboard/', views.dashboard, name='dashboard'),
-    #path('room/', room_views.index, name='room_index'),
-    #path('contact/', views.contact, name='contact'),
-    #path('accounts/', accounts_views.index, name='login'),
-    #path('accounts/', accounts_views.index, name='signup'),
+    
 ]
     
 
