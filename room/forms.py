@@ -6,10 +6,12 @@ from django.utils.translation import gettext_lazy as _
 
 
 class BookingForm(forms.ModelForm):
+    # Define form fields with appropriate widgets
     check_in_date = forms.DateField(widget=forms.DateInput(attrs={'type': 'date'}))
     check_out_date = forms.DateField(widget=forms.DateInput(attrs={'type': 'date'}))
     
     class Meta:
+        # Specify the model and fields to be included in the form
         model = Booking
         fields = ['room', 'check_in_date', 'check_out_date']
 
@@ -28,6 +30,7 @@ class BookingForm(forms.ModelForm):
         if check_in_date < timezone.now().date():
             raise ValidationError("Check-in date cannot be in the past.")
 
+        # Check if check-out date is after check-in date
         if check_out_date < timezone.now().date():
             raise ValidationError("Check-out date cannot be in the past.")
 

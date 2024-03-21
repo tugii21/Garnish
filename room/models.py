@@ -4,6 +4,7 @@ from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
 
 class Room(models.Model):
+    # Choices for room types
     ROOM_TYPES = (
         ('1', 'Single Room'),
         ('2', 'Double Room'),
@@ -14,18 +15,12 @@ class Room(models.Model):
     capacity = models.IntegerField()  # Field for capacity
     number = models.IntegerField()
 
-    # 
+    # String representation of the room
     def __str__(self):
         return f"{self.room_type}"
-    #def bookings(self):
-     #   return Booking.objects.filter(room=self)
-    #def __str__(self):
-     #   return f"{self.get_room_type_display()} Room"  # Corrected line
-    
-    #def __str__(self):
-     #   return f"Booking for {self.room} by {self.user}"
 
 class Booking(models.Model):
+    # Choices for room status
     ROOM_STATUS_CHOICES = (
         ('booked', 'Booked'),
         ('cancelled', 'Cancelled'),
@@ -37,26 +32,32 @@ class Booking(models.Model):
     status = models.CharField(max_length=10, choices=ROOM_STATUS_CHOICES, default='booked')
     created_on = models.DateTimeField(auto_now_add=True)  # Automatically set the current date and time when an object is created
 
-    # 
+    # String representation of the booking
     def __str__(self):
         return f"{self.user} booked for  Room number {self.room} from {self.check_in_date} to {self.check_out_date} "
+# Room for which availability is being tracked
 class RoomAvailability(models.Model):
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
     date = models.DateField()
     available = models.BooleanField(default=True)
 
     class Meta:
+        # Ensure each room availability entry is unique based on room and data
         unique_together = ('room', 'date')
         verbose_name_plural = 'Room Availabilities'
 
+    # String representation of the booking
     def __str__(self):
         return f"{self.room} - {self.date} - {'Available' if self.available else 'Not Available'}"
 
+    # Validate room availability
     def clean(self):
         if self.room is not None and self.date is not None:
             if self.available:
+                # Check if the room is already booked for this date
                 if Booking.objects.filter(room=self.room, check_in_date=self.date).exists():
                     raise ValidationError(_('This room is already booked for this date.'))
         else:
+            # Raise validation error if room or date is not provided
             raise ValidationError(_('Room and date must be provided.'))
 
