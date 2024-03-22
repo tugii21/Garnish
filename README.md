@@ -61,27 +61,29 @@
 
 #### Design
 
-> Initial design planning
+> Design Home Page
 
-Early design stage of this project included making png versions of a homepage and login page prototypes.
-Thanks to that I could decide on the aesthetic choices before entering the coding stage.
 
-<img src="static/images/readme-images/planning-home.png" alt="Homepage prototype" width="520">
-<img src="static/images/readme-images/planning-log-in.png" alt="Login page prototype" width="520">
+<img src="docs/readme_images/home_de.png" alt="Homepage prototype" width="520">
 
-I wanted the website to look modern, professional and welcoming. I chose the base colours to be in the shades of brown, black and white, as they may be associated with coffee.
+
+i wanted front page with some nice description and beautiful image of hotel, color wise i did not
+want to mix too many color because it is hotel booking website, in my opinion light blue and white contrast work very well and gives user very welcoming feeling.
 
 #### Site User
 
-- Someone over 16 years old from the café's area
-- A cat loving person looking for the place to relax
-- Someone who prefers to arrange their bookings digitally rather than over the phone or in person
+- user who logged into site can book and contact the hotel admin
+- user can be localist or traveller or tourist
+- site user can do crud function and easily sign in and out
 
 #### Goals for the website
 
-- To allow customers to see the menu before visiting the café
-- To allow customers to plan their booking in advance
-- To safely store the bookings data and make it available for designated staff to approve or decline it in an easy way
+- To guest read hotel info on main page and log in and book room
+- To allow guest to book room and contact
+- keep all user from CSRF attacks,
+- give user easy navigation link
+- give user easy sign up and sign out option
+- give user some pop up message informing that form is validated
 
 ### Wireframes
 
