@@ -82,7 +82,7 @@ If this section grows too long, you may want to split it off into a separate fil
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official and one trailing slash warning occurred(![W3C validator](docs/readme_images/htmltest.PNG))
+  - No errors were returned when passing through the official and one trailing slash warning occurred![W3C validator](docs/readme_images/htmltest.png)
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://github.com/tugii21/Garnish/blob/main/static/testing_images/Screenshot%202024-03-22%20at%2000.37.28.png)
 
