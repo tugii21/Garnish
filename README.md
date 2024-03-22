@@ -1,6 +1,6 @@
 # GARNISH B&B
 
-> Garnish B&b is small lovely guesthouse,website allow guests to book the room and also contact the hotel admin, Admin can create room number and checking contact request and delete unactive users . Created as a final Individual Project for Code Institute.
+> Garnish B&b is small lovely guesthouse,website allow guests to book the room and also contact the hotel admin, Admin can create room number and checking contact request and delete user by their requirement . Created as a final Individual Project for Code Institute.
 
 ### [Deployed Link to the live site](https://my-final-project-2e49722f6d1b.herokuapp.com/)
 
@@ -268,9 +268,14 @@ Testing for responsiveness done on Google pixel 7, Iphone14 Pro Max, Apple IPAD 
 - CSS
   - No errors were found when passing through the official 
   ![W3C css validator](docs/readme_images/csstest.png)
-  - JS
+- JS
   - No errors were found when passing through the official and one warning of 80 more character in line
   ![W3C js validator](docs/readme_images/jstest.png)
+- Python
+  - No errors were found when passing through the official https://infoheap.com/python-lint-online/
+  ![W3C python validator](docs/readme_images/pythontest.png)
+  ![W3C python validator](docs/readme_images/python1test.png)
+
 
 
 
@@ -432,7 +437,7 @@ Open Your App:
 
 #### FORK this repository follow steps
 
-- Navigate to Navigate to https://github.com/tugii21/Garnish the Repository:
+- Navigate to https://github.com/tugii21/Garnish the Repository:
 - Go to the GitHub website and log in to your account.
 - Locate the repository you want to fork by searching or browsing through your repositories.
 - Fork the Repository:
