@@ -103,7 +103,7 @@ My intention was to create visually pleasing and easy to navigate website. Below
 
 > Large to medium screens
 
-![About Us page](static/images/readme-images/wireframe-about.png)
+![About Us page](docs/wireframe_images/final_project.pdf)
 
 ![Our Cats page](static/images/readme-images/wireframe-cats.png)
 
