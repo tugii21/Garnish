@@ -460,14 +460,13 @@ Creating a clone enables you to make a copy of the current version of this repos
 
 ---
 
-# Resources
+# Resources used for these project and some of them are:
 
-- [Code Institute Full Stack Development course materials](https://codeinstitute.net/global/full-stack-software-development-diploma/?sitelink=FullStackDiploma-IRL&utm_term=code+institute&utm_campaign=CI+-+IRL+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=14304747355&hsa_grp=128775288209&hsa_ad=635725005315&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code+institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAgqGrBhDtARIsAM5s0_l13h8fkiqZeHnw16zshbX6svuL8YJNrw6G-RFdq03RQybQXLSoZiYaAjGqEALw_wcB) 
-- [Django documentation](https://www.djangoproject.com/)
-- [Crispy forms docs](https://django-crispy-forms.readthedocs.io/en/latest/)
-- [Bootstrap docs](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-- [Stack overflow](https://stackoverflow.com/)
-- [Slack](https://slack.com/intl/en-ie/)
+
+- [Django documentation maetrial](https://learn.codeinstitute.net/)
+- [Crispy forms installation from code institute](https://learn.codeinstitute.net/)
+- [Stack overflow website](https://stackoverflow.com/)
+- [Slack channel](https://slack.com/)
 
 ##### [ Back to Top ](#table-of-contents)
 
