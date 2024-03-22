@@ -31,11 +31,11 @@
 
 #### Database Relational Table
 
-![Db relation](docs/wireframe_images/relationalaldb.png)
+![Db relation](docs/wireframe_images/relationaldb.png)
 
 
 
-- One day, a sophisticated woman approached me, requesting a small hotel booking website. and this product is not for commercial purpose and it is only for my experience. Despite the complexity of the task, I embraced the challenge, determined to create a minimal viable product (MVP). 
+- One day, a sophisticated woman approached me, requesting a small hotel booking website.(this product is not for commercial purpose and it is only for my experience)Despite the complexity of the task, I embraced the challenge, determined to create a minimal viable product (MVP). 
 - I crafted the booking table and integrated a form model into the 'Contact Me' page, ensuring a seamless user experience."
 
 #### Data models
