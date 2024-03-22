@@ -98,30 +98,19 @@ I wanted the website to look modern, professional and welcoming. I chose the bas
 
 ### Wireframes
 
-The next stage of UX design planning was creating the basic wireframes using [Figma](https://www.figma.com/).
-My intention was to create visually pleasing and easy to navigate website. Below I did not include the base homepage and login page, as I used the initial planning examples from above instead.
+Ux Design and sketch used BALSAMIQ tool [Balsamiq](https://balsamiq.com/).
+The original sketch and planning of my website design closely aligned with the final MVP, resulting in a seamless transition from concept to execution.
+> Wireframe of Home, Booking,Contact,Sign in,Sign up
 
-> Large to medium screens
+![Home page](docs/wireframe_images/wireframe_images_home.png)
 
-![About Us page](docs/wireframe_images/final_project.pdf)
+![Room page](docs/wireframe_images/wireframe_images_roompage.png)
 
-![Our Cats page](static/images/readme-images/wireframe-cats.png)
+![Contact page](docs/wireframe_images/wireframe_images_contact.png)
 
-![Contact Us page](static/images/readme-images/wireframe-contact.png)
+![Sign in page](docs/wireframe_images/wireframe_images_signin.png)
 
-![Menu page](static/images/readme-images/wireframe-menu.png)
-
-> Small screens
-
-![Home page](static/images/readme-images/wireframe-home-phone.png)
-
-![Login page](static/images/readme-images/wireframe-login-phone.png)
-
-![About Us page](static/images/readme-images/wireframe-about-phone.png)
-
-![Our Cats page](static/images/readme-images/wireframe-cats-phone.png)
-
-![Contact Us page](static/images/readme-images/wireframe-contact-sm.png)
+![Registration page](docs/wireframe_images/wireframe_images_registration.png)
 
 
 
