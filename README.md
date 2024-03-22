@@ -25,7 +25,7 @@
 
 # User Experience
 
-![Db relation](docs/wireframe_images/relationaldb.png)
+![Db relation](docs/wireframe_images/wireframe_images_relationaldb.png)
 <a name="ux"></a>
 
 ## Database Design 
