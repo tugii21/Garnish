@@ -43,30 +43,15 @@
 
 > UserProfile model
 
-- The revised data models developed as the project evolved into it's current state:
+![Db relation](docs/wireframe_images/relation_db.png)
 
-| Key | Name | Field |
-|--|--|--|
-| PrimaryKey | customer | OnetoOneField  |
-| x | first_name | Charfield |
-| x | last_name | Charfield |
-| x | phone_number | Charfield |
-| x | email | Emailfield |
 
 ---
 
-> Bookings model
+> Models.py and Fields
 
-| Key | Name | Field |
-|--|--|--|
-| ForeignKey | booking_customer | ForeignKey  |
-| x | booking_date | DateField |
-| x | booking_time | CharField |
-| x | tables_booked | CharField |
-| x | additional_info  | TextField |
-| x | booked_on | DateTimeField |
-| x | is_confirmed | IntegerField |
-| x | slug | AutoSlugField |
+![Db relation](docs/wireframe_images/model_db.png)
+
 
 ---
 
