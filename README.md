@@ -298,59 +298,78 @@ Testing for responsiveness done on Google pixel 7, Iphone14 Pro Max, Apple IPAD 
 
 
 
-### Manual testing
+### Manual Testing
 
-#### Account Registration Tests
+#### User Registration Tests
 | Test |Result  |
 |--|--|
-| User can create profile | Pass |
-| User can log into profile | Pass |
-| User can log out of profile | Pass |
-| Messages are displaying | Pass |
-| Messages are dismissable by button and timeout | Pass |
+| User can create account | Pass |
+| User can log into account | Pass |
+| User can log out from account | Pass |
+| Pop up messages comes up when user signed in and out | Pass |
+|user can not leave some field blank| Pass|
+
 
 
 
 ---
 
-#### User Navigation Tests
+#### User Navigation from one link to other link Tests
 
 | Test | Result  |
 |--|--|
-| User can easily navigate to Bookings | Pass |
-| User can access About Us page| Pass|
-| User access their account page|Pass|
-| User can access the card content in About Us|Pass|
-| SuperUser can access admin page|Pass|
+| User can easily navigate to Book room | Pass |
+| User can access Home page without login| Pass|
+| User access their booking details on book room page|Pass|
+| User can access the sent request in contact page|Pass|
+| SuperUser can access admin page going to staff link|Pass|
 
 
 
 ---
 
-#### Account Authorisation Tests
+#### User Authorisation Tests
 
 | Test | Result  |
 |--|--|
-| Only Superuser can access admin page |Pass|
-| Non authorised user book a table | Pass |
-| Non authorised user won't access profile page| Pass|
+| Super user can login to admin page |Pass|
+| User not logged in can't go in to book room page| Pass |
+| Non authorised user won't access to contact page| Pass|
+|user can not leave some field blank| Pass|
+
 
 
 
 ---
 
-#### Booking and Profile Tests
+#### Contact request Tests
 
 | Test |Result  |
 |--|--|
-|User can make a booking | Pass |
-|User can view all of their bookings | Pass |
-|User can delete their booking | Pass |
-|User can edit booking | Pass |
-|User can make more than one booking | Pass |
-|User can delete their account | Pass |
-|User can edit their information | Pass |
-|User can see the confirmation information | Pass |
+|User can send a request | Pass |
+|User can list their previous request in contact page | Pass |
+|User can delete or cancel their previous request  | Pass |
+|User can update or add more request in contact page | Pass |
+|User can book make another request | Pass |
+|User can send request in contact page and pop up message display  | Pass |
+|User can see the list of the previous request| Pass |
+
+
+
+---
+
+#### Booking Room Tests
+
+| Test |Result  |
+|--|--|
+|User can choose room no and make a booking | Pass |
+|User can list their room bookings list | Pass |
+|User can delete or cancel their booked room | Pass |
+|User can update room booking | Pass |
+|User can book another booking if there is availibility | Pass |
+|User can send request in contact page  | Pass |
+|User can edit booked room | Pass |
+|User can see the list of booked room information | Pass |
 
 
 
@@ -361,7 +380,9 @@ Testing for responsiveness done on Google pixel 7, Iphone14 Pro Max, Apple IPAD 
 | Test |Result  |
 |--|--|
 |Items display correctly on front-end when updated / added |Pass|
-|Admin can confirm or decline bookings |Pass|
+|Admin can view booked rooms and confirm and delete specific user and booking |Pass|
+|Admin can create new rooms with number pof people and bed and capacity |Pass|
+
 
 
 ##### [ Back to Top ](#table-of-contents)
