@@ -86,6 +86,9 @@ If this section grows too long, you may want to split it off into a separate fil
 - CSS
   - No errors were found when passing through the official 
   ![W3C css validator](docs/readme_images/csstest.png)
+  - JS
+  - No errors were found when passing through the official 
+  ![W3C js validator](docs/readme_images/jstest.png)
 ### Unfixed Bugs
 
 You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
