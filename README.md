@@ -10,7 +10,7 @@
 
 ## Table of contents 
 
- 1. [ UX ](#ux)
+ 1. [ User Experience ](#ux)
  2. [ Agile Development ](#agile-development)
  3. [ Features implemented ](#features-implemented)  
  4. [ Features Left to Implement ](#features-left-to-implement)  
@@ -23,18 +23,20 @@
 
 ---
 
-# UX
+# User Experience
 
 <a name="ux"></a>
 
-## Database planning 
+## Database Design 
 
-#### Data structure
+#### Database Relational Table
 
-<img src="static/images/readme-images/lucid-diagram.png" alt="Lucid diagram" width="600">
+![Db relation](docs/wireframe_images/relationalaldb.png)
 
-- After deciding on the kind of the project and features I wanted to implement I used a lucidchart to plan the database structure.
-- The above diagram is serving as an initial guide to indicate the types and relationships between data stored.
+
+
+- One day, a sophisticated woman approached me, requesting a small hotel booking website. and this product is not for commercial purpose and it is only for my experience. Despite the complexity of the task, I embraced the challenge, determined to create a minimal viable product (MVP). 
+- I crafted the booking table and integrated a form model into the 'Contact Me' page, ensuring a seamless user experience."
 
 #### Data models
 
