@@ -380,81 +380,70 @@ Testing for responsiveness done on Google pixel 7, Iphone14 Pro Max, Apple IPAD 
 # Deployment
 
 #### The deployment stage of the website should follow the steps below:
+>Create Github account
+
+- Visit GitHub: Go to the GitHub website by typing "github.com" 
+- Sign Up: On the GitHub homepage,
+- Enter Your Information:
+- Complete Verification: 
+- the free plan (GitHub Free) is sufficient.
+- Confirm Your Email:
+- Set Up Your Profile: 
+- explore  repositories, [use code institue template](https://github.com/Code-Institute-Org/ci-full-template)
+- use this template button and get url link from your github.
+
+>set up gitpod
+- Create a GitHub Account (if you don't have one):
+- Go to the GitHub website (github.com).
+- Once you have a GitHub account, go to the Gitpod website (gitpod.io).
+- Click on the "Sign in with GitHub" button.
+- Follow the prompts to authorize Gitpod to access your GitHub account.
+- Start a New Workspace:
+- After signing in to Gitpod, you can start a new workspace by clicking on the "New Workspace" button.
+- You'll be prompted to provide a repository URL or select a GitHub repository from your account.(remember you have created using codeinstitute template)
+- Choose the repository you want to work on and customize any additional settings.
+- Accessing Gitpod from GitHub:
+
 
 > Create the Heroku app
 
-- Sign up / Log in to Heroku
-- In Heroku Dashboard page select 'New' and then 'Create New App'
-- Name a project - I decided on the Cat Beans Café (the app's name must be unique)
-- Select EU as that was my region in the moment of creating the app
-- Select "Create App"
-- In the "Deploy" tab choose GitHub as the deployment method
-- Connect your GitHub account/ find and connect your GitHub repository
+- Create a Heroku Account:
+- Go to the Heroku website (heroku.com) and sign up for an account if you don't already have one.
+- Add and commit your code changes to the Git repository using the commands git add . and git commit -m "Initial commit". Push Your Code to Heroku:
+- Deploy your app to Heroku by pushing your code to the Heroku remote using the command git push heroku main (replace main with your branch name if different).
+Open Your App:
 
 > Set up enviroment variables
 
-- In the Django app editor create env.py in the top level
-- In env.py import os
-- In env.py set up necessary enviroment variables:
-  - add a secret key using: os.environ['SECRET_KEY'] = 'your secret key'
-  - for the database variable the line should include os.environ['DATABASE_URL']= 'Paste the database link in here'
-  - in settings.py replace value of SECRET_KEY variable with os.environ.get('SECRET_KEY')
-  - in settings.py change the value of DATABASES variable to 'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-- In Django app's settings.py on top of the file add:
-```
-from pathlib import Path
-import os
-import dj_database_url
-if os.path.isfile('env.py'):
-    import env
-```
-- Navigate to the "Settings" tab in Heroku.
-- Open the "Config Vars" section and add DATABASE_URL as Key and the database link from app's env.py as Value
-- Add SECRET_KEY for the Key value and the secret key value from env.py as the Value
-- In the terminal migrate the models over to the new database connection
-- In settings.py add the STATIC files settings as follows:
-```
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-```
-- Change the templates directory in settings.py to: TEMPLARES_DIR = os.path.join(BASE_DIR, 'templates')
-- In TEMPLATES variable change the 'DIRS' key to look like this: 'DIRS': [TEMPLARES_DIR],
-- Add Heroku to the ALLOWED_HOSTS list (the format will be your-app-name.herokuapp.com, you can copy it from the Domains section in Settings tab in your Heroku app)
-- If you haven't done that up to this point, then create in your Django app's code editor new top level folders: static and templates
-- Create a new file on the top level directory - Procfile, remembering to use a capital letter
-- Within the Procfile add following:
-```
-web: guincorn PROJECT_NAME.wsgi
-``` 
-- In the terminal, add the changed files, commit and push to GitHub
+- Log in to Heroku:
+- Go to the Heroku website and log in to your account.
+- Select Your App:(previously created)
+- From the Heroku dashboard, select the app for which you want to set up environment variables.
+- Go to Settings:
+- Once you've selected the app, navigate to the "Settings" tab.
+- Click on "Reveal Config Vars":
+- Scroll down to the "Config Vars" section and click on the "Reveal Config Vars" button.
+- Add Environment Variables:
+- In the "Key" field, enter the name of your environment variable.(like  SECRET_KEY,DATABASE_URL,CLOUDINARY)
+- In the "Value" field, enter the value for your environment variable.(LIKE PASSWORD YOU HAVE IN GITPOD IN ENV.PY)
+- Click on the "Add" button to add the environment variable.
+- Save Changes:
 
-> Heroku deployment
 
-- In Heroku, navigate to the Deployment tab and deploy the branch manually 
-- Heroku will display a build log- watch the build logs for any errors
-- Once the build process is completed Heroku displays 'Your App Was Successfully Deployed' message and a link to the app to visit the live site
-- As my first 2 build attempts failed I needed to apply changes to my code (I forgot to set up the static files and templates) to successfully deploy on the 3rd time 
+#### FORK this repository follow steps
 
-#### Forking the repository
+- Navigate to Navigate to https://github.com/tugii21/Garnish the Repository:
+- Go to the GitHub website and log in to your account.
+- Locate the repository you want to fork by searching or browsing through your repositories.
+- Fork the Repository:
+- Once you've found the repository, click on the "Fork" button in the top-right corner of the repository page.
+- This action will create a copy of the repository in your GitHub account.
+- Wait for the Fork to Complete:
+- GitHub will create the forked repository in your account. This process usually takes only a few seconds.
+- Clone the Forked Repository:
+- After the forking process is complete, navigate to the forked repository on your GitHub account.
+- Click on the "Code" button and copy the HTTPS or SSH URL of the repository and paste to your worksation gitpid or codeanywhere.
 
-By forking the GitHub Repository you can make a copy of the original repository to view or change without it effecting the original repository. You can do this with following steps:
-
-- Log in to GitHub or create an account
-- Enter this [repository link](https://github.com/TulaUnogi/cat-beans-cafe)
-- Select "Fork" from the top of the repository
-- A copy of the repository should now be created in your own repository
-
-#### Create a clone of this repository
-
-Creating a clone enables you to make a copy of the current version of this repository to run the project locally. To do this follow steps below:
-
-- Navigate to https://github.com/TulaUnogi/cat-beans-cafe
-- Click on the <>Code button at the top of the list of files
-- Select the "HTTPS" option on the "Local" tab and copy the URL it provides to the clipboard
-- Navigate to your code editor and in the terminal change the directory to your chosen location 
-- Type "git clone" and paste the GitHub repository's link
-- Press enter and git will clone the repository for you
 
 ##### [ Back to Top ](#table-of-contents)
 
@@ -463,7 +452,7 @@ Creating a clone enables you to make a copy of the current version of this repos
 # Resources used for these project and some of them are:
 
 
-- [Django documentation maetrial](https://learn.codeinstitute.net/)
+- [Django documentation material](https://learn.codeinstitute.net/)
 - [Crispy forms installation from code institute](https://learn.codeinstitute.net/)
 - [Stack overflow website](https://stackoverflow.com/)
 - [Slack channel](https://slack.com/)
@@ -486,12 +475,12 @@ Creating a clone enables you to make a copy of the current version of this repos
 - <b>[django allauth](https://learn.codeinstitute.net/)</b> Built in Django Allauth and followed on set up [Allauth templates]
 - <b>[Code Insitute learning material](https://learn.codeinstitute.net/)</b> setting up django 
 - <b>[Code Insitute learning material](https://learn.codeinstitute.net/)</b> setting up heroku
+- <b>[Readme file template ideas from](https://github.com/TulaUnogi/cat-beans-cafe/blob/main/README.md)</b> setting up basic structure of readme
 - <b>[Code Insitute learning material](https://learn.codeinstitute.net/)</b> setting up elephantSQL 
 - <b>[Code Insitute learning material](https://learn.codeinstitute.net/)</b> setting up Django project and app and basic set up 
 - <b>[Code Insitute CODING COACH](https://app.slack.com/client/T0L30B202/C066S26EDQX)</b> fix and debug code issue, Great help from Martin and Kevin code institute coding coach,and My menthor Gareth, facilitator David for motivation.
 - <b>[Code Insitute SLACK CHANNEL](https://app.slack.com/)</b> exchange ideas with fellow students
 - <b>[rich resource of internet](https://stackoverflow.com/)</b> thanks to search engine google,youtube,w3school,
-
 
 
 
