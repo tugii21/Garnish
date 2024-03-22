@@ -25,13 +25,14 @@
 
 # User Experience
 
+![Db relation](docs/wireframe_images/relationaldb.png)
 <a name="ux"></a>
 
 ## Database Design 
 
 #### Database Relational Table
 
-![Db relation](docs/wireframe_images/relationaldb.png)
+
 
 
 
