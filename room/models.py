@@ -48,10 +48,26 @@ class RoomAvailability(models.Model):
 
     # String representation of the booking
     def __str__(self):
+        """
+         Return a string representation of the RoomAvailability object.
+
+        Returns:
+         str: A string containing the room name, date, and availability status.
+        """
         return f"{self.room} - {self.date} - {'Available' if self.available else 'Not Available'}"
 
     # Validate room availability
     def clean(self):
+        """
+        Clean and validate room availability before saving.
+
+        This method checks if the room and date are provided. If the room is available, it validates
+        that the room is not already booked for the provided date.
+
+        Raises:
+        ValidationError: If room or date is not provided.
+                     If the room is already booked for the provided date.
+        """
         if self.room is not None and self.date is not None:
             if self.available:
                 # Check if the room is already booked for this date

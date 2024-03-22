@@ -16,7 +16,21 @@ class BookingForm(forms.ModelForm):
         fields = ['room', 'check_in_date', 'check_out_date']
 
     def clean(self):
-        # Accessing the form's cleaned data
+        """
+        Clean and validate form data before saving.
+
+        This method performs validation on the form's cleaned data. It checks if the room, check-in date,
+        and check-out date are provided. It also validates that the check-in date is not in the past, the
+        check-out date is after the check-in date, and that there are no conflicts with existing bookings.
+
+        Raises:
+        ValidationError: If room, check-in date, or check-out date is not provided.
+                     If check-in date is in the past.
+                     If check-out date is in the past.
+                     If the room is already booked for the provided date.
+                     If the selected dates conflict with existing bookings.
+                     If check-out date is not after the check-in date.
+         """ 
         cleaned_data = super().clean()
         check_in_date = cleaned_data.get('check_in_date')
         check_out_date = cleaned_data.get('check_out_date')
