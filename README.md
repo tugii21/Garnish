@@ -25,14 +25,14 @@
 
 # User Experience
 
-![Db relation](docs/wireframe_images/wireframe_images_relationaldb.png)
+
 <a name="ux"></a>
 
 ## Database Design 
 
 #### Database Relational Table
 
-
+![Db relation](docs/wireframe_images/wireframe_images_relationaldb.png)
 
 
 
@@ -196,7 +196,10 @@ The User Stories include the acceptance criteria and are broken down into smalle
 
 # Features Left to Implement
 
-- [USER STORY: BOOKING CANCELLATION](https://github.com/TulaUnogi/cat-beans-cafe/issues/27) - As I've mentioned the initial version of this model is left for now since customer can currently fully delete their booking. 
+- i would more work on design of website and improve functionality.
+- also improve user booking experience on booking page when user update booking then user can see pre-populated data, at this stage user only do it manualy to update the booking
+- i might also work on admin page
+- slideshow image on front page
 
 ##### [ Back to Top ](#table-of-contents)
 
@@ -204,20 +207,15 @@ The User Stories include the acceptance criteria and are broken down into smalle
 
 # Technology used 
 
-- Html - for page structure
-- CSS - for custom styling
-- Python - for the backend
-- Javascript - for timeout in messages
-- Django - framework used to build this project
-- Jinja - templating language rendering logic within html documents
-- Bootstrap 5 - front end framework used by me alongside Django, helps with fast and efficient styling
-- Heroku PostgreSQL - used as the database
-- Font Awesome - for social media icons
-- Google Fonts- currently only for the hero image font
-- GitHub - for storing the code and for the projects Kanban
-- Heroku - for hosting and deployement of this project
-- Cloudinary - hosting the static files 
-- Git - version control tool
+- html, css, js, python
+- deployment heroku 
+- database deployed on elephantSQL
+- style and responsiveness and layout bootstrap
+- balsamiq for wireframe
+- github kanban project board for managing work 
+- AI photo generator for website images
+- gitpod for workspace
+- github for keeping code remote, git add .,commit, push
 
 ##### [ Back to Top ](#table-of-contents)
 
