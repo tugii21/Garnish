@@ -41,14 +41,13 @@
 
 #### Data models
 
-> UserProfile model
 
 ![Db relation](docs/wireframe_images/relation_db.png)
 
 
 ---
 
-> Models.py and Fields
+> Models.py 
 
 ![Db relation](docs/wireframe_images/model_db.png)
 
@@ -476,32 +475,29 @@ Creating a clone enables you to make a copy of the current version of this repos
 
 # Credits and acknowledgements
 
-> Pictures
+> Images
 
-- [Mid-coated Brown Cat](https://www.pexels.com/photo/mid-coated-brown-cat-982865/) by <b>Alena Koval</b> on Pexels
-- [Cat at the table](https://unsplash.com/photos/black-cat-on-white-table-ZxChxgJa6X0) by <b>Madalyn Cox</b> on Unsplash
-- [Cup of coffee](https://pixabay.com/photos/tea-cat-coffee-coffee-shop-cup-2343391/) by <b>yukiqwa</b> on Pixabay
-- [Black Steel Welcome Hanging Signage](https://www.pexels.com/photo/black-steel-welcome-hanging-signage-1406282/) by <b>Henry & Co.</b> on Pexels
-- [Menu background](https://pixabay.com/photos/coffee-mug-heart-caffeine-food-5176961/) by <b>Konrad Janik</b> on Pixabay
+- [hotel booking](https://gencraft.com/generate) by <b>Gencraft</b>AI-powered art and video generation platform
 
-- Cat carousel pictures:
-  1. [Fluffy black cat](https://pixabay.com/photos/couch-cat-pet-feline-animal-6654015/) by <b>Spike Summers</b> on Pixabay 
-  2. [Calico cat](https://www.pexels.com/photo/calico-cat-1359300/) by <b>Cats Coming</b> on Pexels
-  3. [Orange tabby cat](https://www.pexels.com/photo/adorable-animal-cat-close-up-208930/) by <b>Pixabay</b> on Pexels
-  4. [Cat with a mouse toy](https://www.pexels.com/photo/cat-with-a-mouse-toy-3216568/) by <b>lil artsy</b> on Pexels
-  5. [Two cosy tabby cats](https://www.pexels.com/photo/two-tabby-kittens-lying-down-1787414/) by <b>Cats Comin</b> on Pexels
-  6. [Little kitten](https://www.pexels.com/photo/close-up-photo-of-orange-tabby-cat-2581153/) by <b>samer daboul</b> on Pexels
-  7. [Christmas kitten](https://www.pexels.com/photo/close-up-photography-of-white-cat-besides-christmas-lights-735423/) by <b>Eftodii Aurelia</b> on Pexels
+
+
 
 > Code
 
-- <b>[Raymond Penners](https://github.com/pennersr)</b> for amazing Allauth and [Allauth templates](https://github.com/pennersr/django-allauth/tree/main/allauth/templates/account)
-- <b>Roger Pfäffli</b>, Code Institute Alumnus for explaining on Slack how to set up development and DEBUG variables in env.py
-- <b>[Coding Yaar](https://codingyaar.com/shorts/bootstrap-navbar-toggler-color-change/)</b> for Bootstrap navbar toggler colour change tutorial
-- <b>[May.D from Stack Overflow](https://stackoverflow.com/questions/50439356/django-date-validation-help-needed)</b> for date validation
-- <b>Tutors Jason and Oisin</b> for pointing me in the good direction and helping with understanding the code parts I've been struggling with
-- <b>My mentor Narender Singh</b> for his patience and all the help and support
-- <b>[willeM_ Van Onsem](https://stackoverflow.com/questions/77632628/init-got-an-unexpected-keyword-argument-id/77632951#77632951)</b> for helping me with fixing my edit booking class
+- <b>[django allauth](https://learn.codeinstitute.net/)</b> Built in Django Allauth and followed on set up [Allauth templates]
+- <b>[Code Insitute learning material](https://learn.codeinstitute.net/)</b> setting up django 
+- <b>[Code Insitute learning material](https://learn.codeinstitute.net/)</b> setting up heroku
+- <b>[Code Insitute learning material](https://learn.codeinstitute.net/)</b> setting up elephantSQL 
+- <b>[Code Insitute learning material](https://learn.codeinstitute.net/)</b> setting up Django project and app and basic set up 
+- <b>[Code Insitute CODING COACH](https://app.slack.com/client/T0L30B202/C066S26EDQX)</b> fix and debug code issue, Great help from Martin and Kevin code institute coding coach,and My menthor Gareth, facilitator David for motivation.
+- <b>[Code Insitute SLACK CHANNEL](https://app.slack.com/)</b> exchange ideas with fellow students
+- <b>[rich resource of internet](https://stackoverflow.com/)</b> thanks to search engine google,youtube,w3school,
+
+
+
+
+
+
 
 ##### [ Back to Top ](#table-of-contents)
 
@@ -515,17 +511,6 @@ Creating a clone enables you to make a copy of the current version of this repos
 
 
 
-
-
-## Testing 
-
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 
 
