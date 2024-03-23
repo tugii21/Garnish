@@ -470,6 +470,7 @@ Open Your App:
 
 > Code
 
+[To remove unused CSS and JavaScript resources](https://developer.chrome.com/docs/devtools/coverage)
 - <b>[django allauth](https://learn.codeinstitute.net/)</b> Built in Django Allauth and followed on set up [Allauth templates]
 - <b>[Code Insitute learning material](https://learn.codeinstitute.net/)</b> setting up django 
 - <b>[Code Insitute learning material](https://learn.codeinstitute.net/)</b> setting up heroku
