@@ -258,6 +258,22 @@ Testing for responsiveness done on Google pixel 7, Iphone14 Pro Max, Apple IPAD 
 
 
 
+## Light house report test 
+  ![lighthouse report](docs/readme_images/light_report.png)
+  test result came up quite satisfactory and there was accessibility score of (88) which when i looked into it
+  it was low contrast text on blue background on footer section which i have fixed to dark-text,
+  also there was iframe title was missing and i have fixed it straightaway.
+  seo score (92) was relating to meta description which also i have fixed it.
+  performance score (92) was related to Largest Contentful Paint element 2,670 ms
+  Reduce unused CSS Potential savings of 34 KiB, 
+  Eliminate render-blocking resources Potential savings of 610 ms
+
+
+
+
+
+
+
 ### Manual Testing
 
 #### User Registration Tests
