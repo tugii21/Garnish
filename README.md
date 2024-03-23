@@ -145,7 +145,15 @@ The User Stories include the acceptance criteria and are broken down into smalle
 # Features implemented
 
 - [USER STORY: USER CAN CREATE A BOOKING](https://github.com/users/tugii21/projects/5/views/1?pane=issue&itemId=57413682)
-
+- [USER STORY: ADMIN CAN VIEW BOOKING](https://github.com/users/tugii21/projects/5/views/1?pane=issue&itemId=57413681)
+- [USER STORY: AS USER I WANT TO SEE MY BOOKING LIST](https://github.com/users/tugii21/projects/5/views/1?pane=issue&itemId=57413680)
+- [USER STORY:AS NEW USER I WOULD LIKE TO REGISTER](https://github.com/users/tugii21/projects/5/views/1?pane=issue&itemId=57413679)
+- [USER STORY: ]()
+- [USER STORY: ]()
+- [USER STORY: ]()
+- [USER STORY: ]()
+- [USER STORY: ]()
+- [USER STORY: ]()
 
 
 ### Footer&Navigation Link:
