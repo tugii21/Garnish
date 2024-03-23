@@ -148,12 +148,10 @@ The User Stories include the acceptance criteria and are broken down into smalle
 - [USER STORY: ADMIN CAN VIEW BOOKING](https://github.com/users/tugii21/projects/5/views/1?pane=issue&itemId=57413681)
 - [USER STORY: AS USER I WANT TO SEE MY BOOKING LIST](https://github.com/users/tugii21/projects/5/views/1?pane=issue&itemId=57413680)
 - [USER STORY:AS NEW USER I WOULD LIKE TO REGISTER](https://github.com/users/tugii21/projects/5/views/1?pane=issue&itemId=57413679)
-- [USER STORY: ]()
-- [USER STORY: ]()
-- [USER STORY: ]()
-- [USER STORY: ]()
-- [USER STORY: ]()
-- [USER STORY: ]()
+- [USER STORY:As i would lile to create and update and delete my booking](https://github.com/users/tugii21/projects/5/views/1?pane=issue&itemId=56201066)
+- [USER STORY:As User, i would like some notification or pop up messsage displayed](https://github.com/users/tugii21/projects/5/views/1?pane=issue&itemId=56201401)
+- [USER STORY:As admin, i would like only registered user can see enter book a room page ](https://github.com/users/tugii21/projects/5/views/1?pane=issue&itemId=56999306)
+- [USER STORY: as admin user, i dont want duplicate booking on book a room page.](https://github.com/users/tugii21/projects/5/views/1?pane=issue&itemId=57142415)
 
 
 ### Footer&Navigation Link:
