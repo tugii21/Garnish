@@ -156,41 +156,36 @@ The User Stories include the acceptance criteria and are broken down into smalle
 - [USER STORY: CAT CAROUSEL](https://github.com/TulaUnogi/cat-beans-cafe/issues/24)
 
 
-### Navbar and Footer:
+### Footer&Navigation Link:
 
-- Navbar and footer are present on every page
-- Navbar's content changes depending on user authentication, allowing access to profile and user bookings
-- Footer includes café's opening times, social links and address to provide the necessary informations in an easy way.
+- All pages are inherittated from base.html
+- Navbar's is available for all user and home page can displayed without login but other pages need login access
+- Footer includes social icons and find us on message
 
 ### Index page:
 
-- The homepage provides the links to booking and about us page.
-- It can be accessed without signing in.
+- home page displays information about hotel and history and nearby sighseeing
 
-### About Us page:
+### Book a room page:
 
-- Main page includes a short information about the café and set of 4 cards with pictures and description.
-- Each of the card includes the button, that triggers a fullscreen modal.
-- The modals contain informations about the menu, contact details with embedded google maps, link to booking page and gallery with cat pictures (cat carousel).
-- About Us page can be accessed without signing in.
+- Book a room page includes a information about the room type and set of 3 pictures and description and booking button.
+- Each room single,double, ensuite room has booking button
+- book a room page offere user to book a room and read booked room list and update booking and cancel booking.
 
-### Authentication and profile management:
+### User Authentication and authorization:
 
-- User can sign up to create their profile 
-- User can log in to their account and update their informations
-- User can delete their account alltogether with all their data
-- The authentication process is safe thanks to [Django-AllAuth](https://github.com/pennersr/django-allauth) and csrf tokens.
+- user can sign in securily and protected from crsf attack
+- user can do crud function and notified after crud or authenticated
 
-### Bookings:
+### Contact page:
 
-- User can pass their data to create a booking.
-- User can edit their selected booking.
-- Currently the initial version of booking cancellation view has not been fully implemented. I decided to implement an automatic delete_booking view, that allows User to quickly remove their booking from the system.
+- Guest can send request on contact page using form.
+- Guest can easily adjust or change previous request on contact page.
 
 ### Responsiveness:
 
-- Website is responsive thanks to Bootstrap and media queries applied.
-- There's a hamburger navbar on small devices.
+- website responsiveness google chrome developer tool and all page responsiveness was good form
+samsung galaxy fold to largest screen size.
 
 ##### [ Back to Top ](#table-of-contents)
 
