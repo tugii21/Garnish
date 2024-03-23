@@ -12,12 +12,10 @@
     {% if user.is_authenticated %}
     <div class="alert alert-success alert-dismissible fade show" role="alert" id="loginAlert">
         <p class="text-end m-3">You are logged in as {{ user }}</p>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     {% else %}
     <div class="alert alert-info alert-dismissible fade show" role="alert" id="loginAlert">
         <p class="text-end m-3">You are logged out</p>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     {% endif %}
 
