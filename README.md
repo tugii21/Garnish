@@ -109,9 +109,14 @@ The original sketch and planning of my website design closely aligned with the f
 
 # Agile Development
 
-## Overview
+## Github kanban board
 
-I started this project alongside GitHub Projects with intention of planning and tracking the workflow to manage the expected workload. After setting out the epics for my project I broke them down into a set of user stories and smaller tasks, to help me monitor my progress and finish the website in time. Outside of user stories I also included a separate issues for creating each module of this README file, as I simply found it more motivating this way. To see the project's Kanban page please click [here](https://github.com/users/TulaUnogi/projects/3/views/1).
+![Sign up page](docs/readme_images/kanban_imag.png)
+
+
+beginning of project i have created epics and user stories and then tried to map them but there was 
+some error, and it did not allow me to do,so mostly i have created task on daily basis and working indvidually it makes very clear sense like what need to be done on that day.
+ Github Kandan board [here](https://github.com/users/tugii21/projects/5/views/1)
 
 ## User Stories
 
@@ -132,10 +137,6 @@ The User Stories include the acceptance criteria and are broken down into smalle
 9. [USER STORY: MENU](https://github.com/TulaUnogi/cat-beans-cafe/issues/26)
 10. [USER STORY: GOOGLE MAPS](https://github.com/TulaUnogi/cat-beans-cafe/issues/25)
 
-> NINTH: Not Important, Nice To Have
-
-11. [USER STORY: CAT CAROUSEL](https://github.com/TulaUnogi/cat-beans-cafe/issues/24)
-12. [USER STORY: BOOKING CANCELLATION](https://github.com/TulaUnogi/cat-beans-cafe/issues/27)
 
 ##### [ Back to Top ](#table-of-contents)
 
