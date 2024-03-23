@@ -467,10 +467,19 @@ Open Your App:
 
 
 
+> Good Useful Resources
+[To remove unused CSS and JavaScript resources](https://developer.chrome.com/docs/devtools/coverage)
+[performance, quality, and correctness of your web apps test](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk)
+[create smaller, richer images that make the web faster](https://developers.google.com/speed/webp#:~:text=WebP%20is%20a%20modern%20image,that%20make%20the%20web%20faster.)
+[AI image generator](https://gencraft.com/generate)
+- after deploying project to heroku if you need to responsive image here https://ui.dev/amiresponsive 
+use this on (https://chromewebstore.google.com/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe)
+and this will display responsive image
+
 
 > Code
 
-[To remove unused CSS and JavaScript resources](https://developer.chrome.com/docs/devtools/coverage)
+
 - <b>[django allauth](https://learn.codeinstitute.net/)</b> Built in Django Allauth and followed on set up [Allauth templates]
 - <b>[Code Insitute learning material](https://learn.codeinstitute.net/)</b> setting up django 
 - <b>[Code Insitute learning material](https://learn.codeinstitute.net/)</b> setting up heroku
