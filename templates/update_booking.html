@@ -4,6 +4,7 @@
 {% block title %}update booking{% endblock %}
 
 {% block content %}
+<a href="{% url 'booking_detail' booking.id%}">Booking ID: {{ booking.id }}</a><br>
 <h1>Update Booking</h1>
 <form method="post">
     {% csrf_token %}

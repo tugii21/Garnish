@@ -15,28 +15,28 @@
 <br>Check-in Date: {{ booking.check_in_date }}<br>
 Check-out Date: {{ booking.check_out_date }}<br>
 Booked ON: {{ booking.created_on }}<br>
-<a href="{% url 'room' %}" class="btn btn-primary">Back to Booking List</a><br>or <br>
-<a href="{% url 'create_booking' %}" class="btn btn-primary">Create Booking</a>
-
-<p><strong>Update Booking <br>Then Click Update Button </strong></p>
-<form method="post" action="{% url 'update_booking' booking.pk %}">
+<form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Update Booking</button>
 
-    {% csrf_token %}
+    <a href="{% url 'create_booking' %}" class="btn btn-primary">Create Another Booking</a>
+    <br>
+    <br>
+    <a href="{% url 'room' %}" class="btn btn-primary">View Your Booking List</a>
+    <br>
+    <br>
+    <a href="{% url 'update_booking' booking.pk %}" class="btn btn-primary">Update Booking</a>
+    <br>
+    <br>
+    <a href="{% url 'delete_booking' booking.pk %}" class="btn btn-primary">Cancel Booking</a>
 </form>
 
-<p><strong>Cancel Booking <br>Then Click Cancel Button </strong></p>
-<a href="{% url 'delete_booking' pk=booking.pk %}">
-    <button type="submit">Cancel Booking</button>
-</a>
-
-
-
-
-
-
-
-
 {% endblock %}
+
+
+
+
+
+
+
+
