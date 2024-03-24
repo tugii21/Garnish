@@ -16,9 +16,11 @@ Contact List
         <form method="post">
             {% csrf_token %}
             {{ form.as_p }}
-            <button type="submit">Send Request</button>
+            <button type="submit" class="btn btn-success">Send Request</button>
         </form>
-        <a href="{% url 'contact_list' %}">Or Cancel Request</a>
+        <br>
+        <a href="{% url 'contact_list' %}" class="btn btn-success">View Your Previous Request</a>
+        
     </div>
     <div class="col-md-6">
         <!-- Image -->

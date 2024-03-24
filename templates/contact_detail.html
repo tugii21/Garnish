@@ -19,14 +19,15 @@ Contact details
         <p><strong>Address:</strong> {{ contact.address }}</p>
         <p><strong>Message:</strong> {{ contact.message }}</p>
         <p><strong>If You Want To Update Your Submitted Request <br>Then Click Update Button </strong></p>
-        <a href="{% url 'contact_update' contact.pk %}"><button type="submit">Update</button></a>
+        <a href="{% url 'contact_update' contact.pk %}"><button type="submit" class="btn btn-success">Update</button></a>
 
         {% csrf_token %}
         <p><strong>If You Want To Delete Your Submitted Request <br>Then Click Delete Button </strong></p>
-        <a href="{% url 'contact_delete' pk=contact.pk %}"><button type="submit">Delete</button></a>
-
+        <a href="{% url 'contact_delete' pk=contact.pk %}"><button type="submit" class="btn btn-success">Delete</button></a>
+        <br>
         </form>
-        <a href="{% url 'contact_list' %}">Back to List</a>
+        <br>
+        <a href="{% url 'contact_list' %}" ><button type="submit" class="btn btn-success">Back to Previous Requests</button></a>
     </div>
     <div class="col-md-6">
         <!-- Image -->
