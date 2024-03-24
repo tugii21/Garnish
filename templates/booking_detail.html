@@ -4,39 +4,36 @@
 {% block title %}Detail of booking{% endblock %}
 
 {% block content %}
-<ul>
+<div class="row">
+    <div class="col-md-6">
 
-</ul>
+        <h1>Booking Detail</h1>
+        <p><strong>Reservation Number:</strong> {{ booking.id }}</p>
+        <p><strong>User Name:</strong> {{booking.user }}</p>
+        <br>Room Type: {{ booking.room.get_room_type_display }}<br>
+        <br>Check-in Date: {{ booking.check_in_date }}<br>
+        Check-out Date: {{ booking.check_out_date }}<br>
+        Booked ON: {{ booking.created_on }}<br>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
 
-<h1>Booking Detail</h1>
-<p><strong>Reservation Number:</strong> {{ booking.id }}</p>
-<p><strong>User Name:</strong> {{booking.user }}</p>
-<br>Room Type: {{ booking.room.get_room_type_display }}<br>
-<br>Check-in Date: {{ booking.check_in_date }}<br>
-Check-out Date: {{ booking.check_out_date }}<br>
-Booked ON: {{ booking.created_on }}<br>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-
-    <a href="{% url 'create_booking' %}" class="btn btn-primary">Create Another Booking</a>
-    <br>
-    <br>
-    <a href="{% url 'room' %}" class="btn btn-primary">View Your Booking List</a>
-    <br>
-    <br>
-    <a href="{% url 'update_booking' booking.pk %}" class="btn btn-primary">Update Booking</a>
-    <br>
-    <br>
-    <a href="{% url 'delete_booking' booking.pk %}" class="btn btn-primary">Cancel Booking</a>
-</form>
+            <a href="{% url 'create_booking' %}" class="btn btn-primary">Create Another Booking</a>
+            <br>
+            <br>
+            <a href="{% url 'room' %}" class="btn btn-primary">View Your Booking List</a>
+            <br>
+            <br>
+            <a href="{% url 'update_booking' booking.pk %}" class="btn btn-primary">Update Booking</a>
+            <br>
+            <br>
+            <a href="{% url 'delete_booking' booking.pk %}" class="btn btn-primary">Cancel Booking</a>
+        </form>
+    </div>
+    <div class="col-md-6">
+        <!-- Image -->
+        <img src="{% static 'images/booking_detail_image.png' %}" class="img-fluid" alt="Image">
+    </div>
+</div>
 
 {% endblock %}
-
-
-
-
-
-
-
-

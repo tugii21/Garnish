@@ -4,15 +4,23 @@
 {% block title %}del book{% endblock %}
 
 {% block content %}
-<h1>Delete Booking</h1>
-<p>Are you sure you want to delete booking ID {{ booking.id }}?</p>
-<form method="post">
-    {% csrf_token %}
-    <button type="submit" class="btn btn-primary">Delete</button>
-</form>
-<br>
-Or
-<br>
-<br>
-<a href="{% url 'room' %}" class="btn btn-primary">Back to Booking List</a>
+<div class="row">
+    <div class="col-md-6">
+        <h1>Delete Booking</h1>
+        <p>Are you sure you want to delete booking ID {{ booking.id }}?</p>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-primary">Delete</button>
+        </form>
+        <br>
+        Or
+        <br>
+        <br>
+        <a href="{% url 'room' %}" class="btn btn-primary">Back to Booking List</a>
+    </div>
+    <div class="col-md-6">
+        <!-- Image -->
+        <img src="{% static 'images/booking_cancel_image.png' %}" class="img-fluid" alt="Image">
+    </div>
+</div>
 {% endblock %}

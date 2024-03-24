@@ -475,6 +475,7 @@ Open Your App:
 - after deploying project to heroku if you need to responsive image here https://ui.dev/amiresponsive 
 use this on (https://chromewebstore.google.com/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe)
 and this will display responsive image
+[Compress HD images faster for website](https://tinypng.com/)
 
 
 > Code
