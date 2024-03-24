@@ -3,7 +3,6 @@
 {% load i18n %}
 {% load account socialaccount %}
 
-{% block head_title %}{% trans "Sign In" %}{% endblock %}
 {% block content %}
 
  <!-- This template combines HTML markup with Django template tags and filters to create a dynamic and localized sign-in page for the web application. -->
@@ -26,8 +25,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 mt-3">
-                <h3>{% trans "Sign In" %}</h3>
-                <p>{% blocktrans %}Welcome back to the Garnish B&b. If you haven't created an account yet, <a
+                <h1>{% trans "Sign In" %}</h1>
+                <p>{% blocktrans %}Welcome back to the Garnish B&b. If you haven't created an account yet,<a
                         class="link" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
             </div>
         </div>
