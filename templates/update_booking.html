@@ -9,5 +9,9 @@
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Update Booking</button>
+    <br>
+    <br>Or
+    <a href="{% url 'room' %}" class="btn btn-primary">Back to Booking List</a>
+
 </form>
 {% endblock %}
