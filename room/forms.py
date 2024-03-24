@@ -50,7 +50,7 @@ class BookingForm(forms.ModelForm):
 
         # Existing validation logic
         if Booking.objects.filter(room=room, check_in_date=check_in_date).exists():
-            raise ValidationError(_('This room is already booked for this date.'))
+            raise ValidationError('Dates are Unavailable.Cancel The Existing Booking First And Try again!!!')
 
         # Check for conflicts with existing bookings
         conflicting_bookings = Booking.objects.filter(

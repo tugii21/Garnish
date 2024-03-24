@@ -8,6 +8,11 @@
 <p>Are you sure you want to delete booking ID {{ booking.id }}?</p>
 <form method="post">
     {% csrf_token %}
-    <button type="submit">Delete</button>
+    <button type="submit" class="btn btn-primary">Delete</button>
 </form>
+<br>
+Or
+<br>
+<br>
+<a href="{% url 'room' %}" class="btn btn-primary">Back to Booking List</a>
 {% endblock %}

@@ -9,9 +9,13 @@
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Update Booking</button>
+    <button type="submit" class="btn btn-primary">Update Booking</button>
+
     <br>
     <br>Or
+    <a href="{% url 'delete_booking' booking.pk %}" class="btn btn-primary">Cancel Booking</a>
+     <br>
+     <br>
     <a href="{% url 'room' %}" class="btn btn-primary">Back to Booking List</a>
 
 </form>
