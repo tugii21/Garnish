@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% load static %}
+
 
 {% block head_title %}{% trans "Signup" %}{% endblock head_title %}
 
@@ -33,5 +35,8 @@
   {% endif %}
   <button class="btn btn-outline-secondary btn-signup right" type="submit">{% trans "Sign Up" %} &raquo;</button>
 </form>
+<div>
+  <img src="{% static 'images/signin.png' %}" class="img-fluid" alt="Image">
+</div>
 
 {% endblock content %}
