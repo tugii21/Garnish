@@ -86,7 +86,7 @@ body {
 }
 
 /* Form */
-#signup .background-image-container{
+/*#signup .background-image-container{
     background-image: url("{% static 'images/signin.png' %}");
     background-size: cover;
     background-position: 75%;
@@ -98,7 +98,7 @@ body {
     flex-direction: column;
 }
 /* styling sign up form  */
-.signup .form-group {
+/*.signup .form-group {
     display: inline-block;
     margin-right: 10px; 
   }
@@ -118,3 +118,4 @@ body {
     max-width: 60px; /* Adjust the max-width as needed */
     height: auto;
 }
+

@@ -30,11 +30,9 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-tugii21-garnish-vkjys4k3oxb.ws-eu109.gitpod.io'
-                 ,'.herokuapp.com',
-                 '8000-tugii21-garnish-vkjys4k3oxb.ws-eu110.gitpod.io'
+ALLOWED_HOSTS = ['.herokuapp.com', '127.0.0.1', 'localhost','8000-tugii21-garnish-8cb40ka0vql.ws.codeinstitute-ide.net'
 ]
-CSRF_TRUSTED_ORIGINS = ['https://8000-tugii21-garnish-vkjys4k3oxb.ws-eu110.gitpod.io',
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1', 'http://localhost', 'https://8000-tugii21-garnish-8cb40ka0vql.ws.codeinstitute-ide.net',
 "https://*.herokuapp.com"]
 
 
