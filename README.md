@@ -1,6 +1,6 @@
 # GARNISH B&B
 
-> Garnish B&b is small lovely guesthouse,website allow guests to book the room and also contact the hotel admin, Admin can create room number and checking contact request and delete user by their requirement . Created as a final Individual Project for Code Institute.
+> Garnish B&b is small lovely guesthouse,website allow guests to book the room and also contact the hotel admin, Admin can create room number and checking contact request and delete user by their requirement . Created as a final Individual Project for Code Institute 2024.
 
 ### [Deployed Link to the live site](https://my-final-project-2e49722f6d1b.herokuapp.com/)
 
