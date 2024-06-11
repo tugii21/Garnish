@@ -34,12 +34,13 @@ def create_booking(request):
         form = BookingForm()
     return render(request, 'create_booking.html', {'form': form})
 
-
+@login_required
 def booking_detail(request, pk):
     """Display details of a booking."""
     booking = get_object_or_404(Booking, pk=pk)
     return render(request, 'booking_detail.html', {'booking': booking})
 
+@login_required
 def update_booking(request, pk):
     """Handle updating an existing booking."""
     booking = get_object_or_404(Booking, pk=pk)
@@ -58,6 +59,7 @@ def update_booking(request, pk):
 
     return render(request, 'update_booking.html', {'form': form, 'booking': booking})
 
+@login_required
 def delete_booking(request, pk):
     """Handle deletion of an existing booking."""
     booking = get_object_or_404(Booking, pk=pk)
@@ -68,6 +70,7 @@ def delete_booking(request, pk):
         return redirect('booking_list')
     return render(request, 'delete_booking.html', {'booking': booking})
 
+@login_required
 def book_room(request, room_id):
     """Handle booking a room."""
     room_availability = RoomAvailability.objects.filter(room_id=room_id)
