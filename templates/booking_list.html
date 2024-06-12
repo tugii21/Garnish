@@ -6,54 +6,56 @@
 {% block content %}
 <div class="container mt-4">
     <h1>Your Booking Lists</h1>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Reservation Number</th>
-                <th>User Name</th>
-                <th>Room Type</th>
-                <th>Check-in Date</th>
-                <th>Check-out Date</th>
-                <th>Booked On</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for booking in bookings %}
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
                 <tr>
-                    <td>{{ booking.id }}</td>
-                    <td>{{ booking.user }}</td>
-                    <td>{{ booking.room.get_room_type_display }}</td>
-                    <td>{{ booking.check_in_date }}</td>
-                    <td>{{ booking.check_out_date }}</td>
-                    <td>{{ booking.created_on }}</td>
-                    <td>
-                        <a href="{% url 'booking_detail' booking.id %}" class="btn btn-info btn-sm">View</a>
-                        <a href="{% url 'update_booking' booking.pk %}" class="btn btn-warning btn-sm">Update</a>
-                        <a href="{% url 'delete_booking' booking.pk %}" class="btn btn-danger btn-sm">Cancel</a>
-                    </td>
+                    <th scope="col">Res. #</th>
+                    <th scope="col">User</th>
+                    <th scope="col">Room Type</th>
+                    <th scope="col">Check-in Date</th>
+                    <th scope="col">Check-out Date</th>
+                    <th scope="col">Booked On</th>
+                    <th scope="col">Actions</th>
                 </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                {% for booking in bookings %}
+                    <tr>
+                        <td>{{ booking.id }}</td>
+                        <td>{{ booking.user }}</td>
+                        <td>{{ booking.room.get_room_type_display }}</td>
+                        <td>{{ booking.check_in_date }}</td>
+                        <td>{{ booking.check_out_date }}</td>
+                        <td>{{ booking.created_on }}</td>
+                        <td>
+                            <a href="{% url 'booking_detail' booking.id %}" class="btn btn-info btn-sm">View</a>
+                            <a href="{% url 'update_booking' booking.pk %}" class="btn btn-warning btn-sm">Update</a>
+                            <a href="{% url 'delete_booking' booking.pk %}" class="btn btn-danger btn-sm">Cancel</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
     <a href="{% url 'create_booking' %}" class="btn btn-primary mt-3">Create Another Booking</a>
 </div>
 
 <div class="container mt-4">
     <h1>Room Categories</h1>
     <div class="row">
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 col-sm-6 mb-4">
             <div class="card">
                 <img src="{% static 'images/singleroom.png' %}" class="card-img-top" alt="Room 1">
                 <div class="card-body">
-                    <h5 class="card-title">Single Room - Room No1 </h5>
+                    <h5 class="card-title">Single Room - Room No1</h5>
                     <a href="{% url 'create_booking' %}?room=single" class="btn btn-primary">Book Now</a>
-                    <p>Our single room in a guesthouse is typically designed to accommodate one guest. It is furnished with a single bed. In terms of amenities, Our a single room includes basic facilities such as a bedside table, a lamp, a wardrobe or closet, and a small desk or writing area. Additional feature includes a television, a telephone, and access to Wi-Fi or wired internet for guests' convenience. private bathroom attached. The decor and furnishings of a our single room can vary. Whether it's a cozy retreat for a solo traveler or a functional space for a business trip, Our goal is to provide comfort and convenience to the guest during your stay.</p>
+                    <p>Our single room in a guesthouse is typically designed to accommodate one guest. It is furnished with a single bed. In terms of amenities, Our single room includes basic facilities such as a bedside table, a lamp, a wardrobe or closet, and a small desk or writing area. Additional features include a television, a telephone, and access to Wi-Fi or wired internet for guests' convenience. private bathroom attached. The decor and furnishings of our single room can vary. Whether it's a cozy retreat for a solo traveler or a functional space for a business trip, our goal is to provide comfort and convenience to the guest during your stay.</p>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 col-sm-6 mb-4">
             <div class="card">
                 <img src="{% static 'images/doubleroom.png' %}" class="card-img-top" alt="Room 2">
                 <div class="card-body">
@@ -64,7 +66,7 @@
             </div>
         </div>
 
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 col-sm-6 mb-4">
             <div class="card">
                 <img src="{% static 'images/ensuiteroom.png' %}" class="card-img-top" alt="Room 3">
                 <div class="card-body">
@@ -76,4 +78,6 @@
         </div>
     </div>
 </div>
+
 {% endblock %}
+

@@ -46,6 +46,21 @@
 }
 
 /* Responsive styles */
+@media (max-width: 576px) {
+    .table th, .table td {
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+
+    .table td a.btn {
+        margin-bottom: 2.5px;
+    }
+
+    .card-body p {
+        font-size: 0.9rem;
+    }
+}
+
 /* Mobile devices (up to 767px) */
 @media (max-width: 767px) {
     .navbar-nav .nav-item {
