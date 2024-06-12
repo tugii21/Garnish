@@ -1,31 +1,26 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}update booking{% endblock %}
+{% block title %}Update Booking{% endblock %}
 
 {% block content %}
-<div class="row">
-    <div class="col-md-6">
-
-        <a href="{% url 'booking_detail' booking.id%}">Booking ID: {{ booking.id }}</a><br>
-        <h1>Update Booking</h1>
-        <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="btn btn-primary">Update Booking</button>
-
-            <br>
-            <br>
-            <a href="{% url 'delete_booking' booking.pk %}" class="btn btn-primary">Cancel Booking</a>
-            <br>
-            <br>
-            <a href="{% url 'room' %}" class="btn btn-primary">Back to Booking List</a>
-
-        </form>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Update Booking</h1>
+            <a href="{% url 'booking_detail' booking.id %}" class="btn btn-link">Booking ID: {{ booking.id }}</a><br>
+            <form method="post" class="mt-3">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary mt-3">Update Booking</button>
+                <a href="{% url 'delete_booking' booking.pk %}" class="btn btn-danger mt-3">Cancel Booking</a>
+                <a href="{% url 'room' %}" class="btn btn-secondary mt-3">Back to Booking List</a>
+            </form>
         </div>
         <div class="col-md-6">
             <!-- Image -->
             <img src="{% static 'images/booking_update_image.png' %}" class="img-fluid" alt="Image">
         </div>
     </div>
-    {% endblock %}
+</div>
+{% endblock %}
